@@ -9,11 +9,15 @@
 /* Begin PBXBuildFile section */
 		77B094B65B203E952A819380 /* Pods_RxSwiftReactorKitSampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5370CD8DFFAED3638126AC95 /* Pods_RxSwiftReactorKitSampleApp.framework */; };
 		BC18740421B4C3CF00AD3A01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC18740321B4C3CF00AD3A01 /* AppDelegate.swift */; };
-		BC18740621B4C3CF00AD3A01 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC18740521B4C3CF00AD3A01 /* ViewController.swift */; };
 		BC18740921B4C3CF00AD3A01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC18740721B4C3CF00AD3A01 /* Main.storyboard */; };
 		BC18740B21B4C3CF00AD3A01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC18740A21B4C3CF00AD3A01 /* Assets.xcassets */; };
 		BC18740E21B4C3CF00AD3A01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC18740C21B4C3CF00AD3A01 /* LaunchScreen.storyboard */; };
 		BC18741621B4CCE800AD3A01 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = BC18741521B4CCE800AD3A01 /* Podfile */; };
+		BC18742321B4FC0700AD3A01 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC18742221B4FC0700AD3A01 /* MainViewController.swift */; };
+		BC18742521B4FC3900AD3A01 /* MainViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC18742421B4FC3900AD3A01 /* MainViewReactor.swift */; };
+		BC18742B21B50A7500AD3A01 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC18742A21B50A7500AD3A01 /* Setting.storyboard */; };
+		BC18742D21B50A8400AD3A01 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC18742C21B50A8400AD3A01 /* SettingViewController.swift */; };
+		BC18742F21B50A9600AD3A01 /* SettingViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC18742E21B50A9600AD3A01 /* SettingViewReactor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,12 +26,17 @@
 		9BD65D53911B88314410E609 /* Pods-RxSwiftReactorKitSampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftReactorKitSampleApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwiftReactorKitSampleApp/Pods-RxSwiftReactorKitSampleApp.debug.xcconfig"; sourceTree = "<group>"; };
 		BC18740021B4C3CF00AD3A01 /* RxSwiftReactorKitSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftReactorKitSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC18740321B4C3CF00AD3A01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BC18740521B4C3CF00AD3A01 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BC18740821B4C3CF00AD3A01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BC18740A21B4C3CF00AD3A01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC18740D21B4C3CF00AD3A01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC18740F21B4C3CF00AD3A01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC18741521B4CCE800AD3A01 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		BC18742221B4FC0700AD3A01 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		BC18742421B4FC3900AD3A01 /* MainViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewReactor.swift; sourceTree = "<group>"; };
+		BC18742621B502DE00AD3A01 /* RxSwiftReactorKitSampleApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RxSwiftReactorKitSampleApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		BC18742A21B50A7500AD3A01 /* Setting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
+		BC18742C21B50A8400AD3A01 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		BC18742E21B50A9600AD3A01 /* SettingViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewReactor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,14 +90,115 @@
 		BC18740221B4C3CF00AD3A01 /* RxSwiftReactorKitSampleApp */ = {
 			isa = PBXGroup;
 			children = (
+				BC18741721B4F72D00AD3A01 /* Data */,
+				BC18741821B4F74400AD3A01 /* Resources */,
+				BC18741921B4F76700AD3A01 /* Common */,
+				BC18741B21B4F7B300AD3A01 /* Services */,
+				BC18741E21B4F81B00AD3A01 /* Networks */,
+				BC18741A21B4F78400AD3A01 /* Scenarios */,
 				BC18740321B4C3CF00AD3A01 /* AppDelegate.swift */,
-				BC18740521B4C3CF00AD3A01 /* ViewController.swift */,
-				BC18740721B4C3CF00AD3A01 /* Main.storyboard */,
 				BC18740A21B4C3CF00AD3A01 /* Assets.xcassets */,
 				BC18740C21B4C3CF00AD3A01 /* LaunchScreen.storyboard */,
 				BC18740F21B4C3CF00AD3A01 /* Info.plist */,
+				BC18742621B502DE00AD3A01 /* RxSwiftReactorKitSampleApp-Bridging-Header.h */,
 			);
 			path = RxSwiftReactorKitSampleApp;
+			sourceTree = "<group>";
+		};
+		BC18741721B4F72D00AD3A01 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		BC18741821B4F74400AD3A01 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BC18741921B4F76700AD3A01 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				BC18741C21B4F7E700AD3A01 /* Extensions */,
+				BC18741D21B4F7EF00AD3A01 /* Types */,
+				BC18741F21B4FBBD00AD3A01 /* Models */,
+				BC18742021B4FBD200AD3A01 /* Views */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		BC18741A21B4F78400AD3A01 /* Scenarios */ = {
+			isa = PBXGroup;
+			children = (
+				BC18742121B4FBE100AD3A01 /* Main */,
+				BC18742921B50A5500AD3A01 /* Setting */,
+			);
+			path = Scenarios;
+			sourceTree = "<group>";
+		};
+		BC18741B21B4F7B300AD3A01 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		BC18741C21B4F7E700AD3A01 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BC18741D21B4F7EF00AD3A01 /* Types */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Types;
+			sourceTree = "<group>";
+		};
+		BC18741E21B4F81B00AD3A01 /* Networks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networks;
+			sourceTree = "<group>";
+		};
+		BC18741F21B4FBBD00AD3A01 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BC18742021B4FBD200AD3A01 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BC18742121B4FBE100AD3A01 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				BC18740721B4C3CF00AD3A01 /* Main.storyboard */,
+				BC18742221B4FC0700AD3A01 /* MainViewController.swift */,
+				BC18742421B4FC3900AD3A01 /* MainViewReactor.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		BC18742921B50A5500AD3A01 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				BC18742A21B50A7500AD3A01 /* Setting.storyboard */,
+				BC18742C21B50A8400AD3A01 /* SettingViewController.swift */,
+				BC18742E21B50A9600AD3A01 /* SettingViewReactor.swift */,
+			);
+			path = Setting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +235,7 @@
 				TargetAttributes = {
 					BC1873FF21B4C3CF00AD3A01 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -153,6 +264,7 @@
 			files = (
 				BC18740E21B4C3CF00AD3A01 /* LaunchScreen.storyboard in Resources */,
 				BC18740B21B4C3CF00AD3A01 /* Assets.xcassets in Resources */,
+				BC18742B21B50A7500AD3A01 /* Setting.storyboard in Resources */,
 				BC18741621B4CCE800AD3A01 /* Podfile in Resources */,
 				BC18740921B4C3CF00AD3A01 /* Main.storyboard in Resources */,
 			);
@@ -212,8 +324,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC18740621B4C3CF00AD3A01 /* ViewController.swift in Sources */,
+				BC18742F21B50A9600AD3A01 /* SettingViewReactor.swift in Sources */,
+				BC18742521B4FC3900AD3A01 /* MainViewReactor.swift in Sources */,
+				BC18742321B4FC0700AD3A01 /* MainViewController.swift in Sources */,
 				BC18740421B4C3CF00AD3A01 /* AppDelegate.swift in Sources */,
+				BC18742D21B50A8400AD3A01 /* SettingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,6 +475,7 @@
 			baseConfigurationReference = 9BD65D53911B88314410E609 /* Pods-RxSwiftReactorKitSampleApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y72B7R5K2B;
 				INFOPLIST_FILE = RxSwiftReactorKitSampleApp/Info.plist;
@@ -370,6 +486,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = kr.co.clintjang.RxSwiftReactorKitSampleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RxSwiftReactorKitSampleApp/RxSwiftReactorKitSampleApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -380,6 +498,7 @@
 			baseConfigurationReference = 0206F0A0B20768933D6BF794 /* Pods-RxSwiftReactorKitSampleApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y72B7R5K2B;
 				INFOPLIST_FILE = RxSwiftReactorKitSampleApp/Info.plist;
@@ -390,6 +509,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = kr.co.clintjang.RxSwiftReactorKitSampleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RxSwiftReactorKitSampleApp/RxSwiftReactorKitSampleApp-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MainViewController.swift
 //  RxSwiftReactorKitSampleApp
 //
 //  Created by Clint on 03/12/2018.
@@ -8,13 +8,16 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class MainViewController: UIViewController, StoryboardView {
+    
+    var disposeBag = DisposeBag()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
     }
-
-
+    
+    func bind(reactor: MainViewReactor) {
+        
+    }
 }
-
