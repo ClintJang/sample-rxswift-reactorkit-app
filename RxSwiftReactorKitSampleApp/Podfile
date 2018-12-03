@@ -1,0 +1,42 @@
+platform :ios, '10.0'
+
+def core_pods
+    # swift를 Rx로 Wrapping 한 라이브러리 입니다.
+    pod 'RxSwift'
+
+    # Cocoa Sdk를 Rx로 Wrapping 한 라이브러리입니다.
+    pod 'RxCocoa'
+end
+
+def archi_pods
+    # https://github.com/ReactorKit/ReactorKit
+    pod 'ReactorKit'
+end
+
+def lint_pods
+    # Swift style and conventions
+    pod 'SwiftLint'
+end 
+
+def debugging_pods
+    # 디버깅용
+    pod 'FLEX', :configurations => ['Debug']
+end
+
+
+target 'RxSwiftReactorKitSampleApp' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+    # core 라이브러리
+    core_pods
+
+    # 아키텍쳐 라이브러리
+    archi_pods
+
+    # 코딩 스타일
+    lint_pods
+
+    # 디버깅용 라이브러리
+    debugging_pods
+end
