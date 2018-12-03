@@ -12,12 +12,12 @@
 		BC18740921B4C3CF00AD3A01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC18740721B4C3CF00AD3A01 /* Main.storyboard */; };
 		BC18740B21B4C3CF00AD3A01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC18740A21B4C3CF00AD3A01 /* Assets.xcassets */; };
 		BC18740E21B4C3CF00AD3A01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC18740C21B4C3CF00AD3A01 /* LaunchScreen.storyboard */; };
-		BC18741621B4CCE800AD3A01 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = BC18741521B4CCE800AD3A01 /* Podfile */; };
 		BC18742321B4FC0700AD3A01 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC18742221B4FC0700AD3A01 /* MainViewController.swift */; };
 		BC18742521B4FC3900AD3A01 /* MainViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC18742421B4FC3900AD3A01 /* MainViewReactor.swift */; };
 		BC18742B21B50A7500AD3A01 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC18742A21B50A7500AD3A01 /* Setting.storyboard */; };
 		BC18742D21B50A8400AD3A01 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC18742C21B50A8400AD3A01 /* SettingViewController.swift */; };
 		BC18742F21B50A9600AD3A01 /* SettingViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC18742E21B50A9600AD3A01 /* SettingViewReactor.swift */; };
+		BC18743321B515A500AD3A01 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = BC18743221B515A500AD3A01 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,13 +30,13 @@
 		BC18740A21B4C3CF00AD3A01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC18740D21B4C3CF00AD3A01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC18740F21B4C3CF00AD3A01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BC18741521B4CCE800AD3A01 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		BC18742221B4FC0700AD3A01 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		BC18742421B4FC3900AD3A01 /* MainViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewReactor.swift; sourceTree = "<group>"; };
 		BC18742621B502DE00AD3A01 /* RxSwiftReactorKitSampleApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RxSwiftReactorKitSampleApp-Bridging-Header.h"; sourceTree = "<group>"; };
 		BC18742A21B50A7500AD3A01 /* Setting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
 		BC18742C21B50A8400AD3A01 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		BC18742E21B50A9600AD3A01 /* SettingViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewReactor.swift; sourceTree = "<group>"; };
+		BC18743221B515A500AD3A01 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +71,7 @@
 		BC1873F721B4C3CF00AD3A01 = {
 			isa = PBXGroup;
 			children = (
-				BC18741521B4CCE800AD3A01 /* Podfile */,
+				BC18743221B515A500AD3A01 /* README.md */,
 				BC18740221B4C3CF00AD3A01 /* RxSwiftReactorKitSampleApp */,
 				BC18740121B4C3CF00AD3A01 /* Products */,
 				79EA5F101F097F2611B9DBB2 /* Pods */,
@@ -264,8 +264,8 @@
 			files = (
 				BC18740E21B4C3CF00AD3A01 /* LaunchScreen.storyboard in Resources */,
 				BC18740B21B4C3CF00AD3A01 /* Assets.xcassets in Resources */,
+				BC18743321B515A500AD3A01 /* README.md in Resources */,
 				BC18742B21B50A7500AD3A01 /* Setting.storyboard in Resources */,
-				BC18741621B4CCE800AD3A01 /* Podfile in Resources */,
 				BC18740921B4C3CF00AD3A01 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
