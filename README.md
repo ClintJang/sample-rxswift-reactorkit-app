@@ -1,5 +1,5 @@
 # RxSwift ReactorKit Sample App
-- 프로젝트 개발 시, 셈플용 기본 구조가 될 만한 셈플 앱을 만들어 보려 합니다.
+- 프로젝트 개발 시, 샘플용 기본 구조가 될 만한 샘플 앱을 만들어 보려 합니다.
 
 ## 상세 설명 (Description)
 ReactorKit 을 활용해서 기본이 되는 iOS Sample App을 만들어 보려고 합니다.
@@ -54,5 +54,5 @@ ReactorKit 을 활용해서 기본이 되는 iOS Sample App을 만들어 보려�
 ## 시작하기 (Getting started)
 - 작성중
 
-## 셈플 앱
+## 샘플 앱
 - 작성중
