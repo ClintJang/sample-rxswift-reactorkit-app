@@ -1,10 +1,12 @@
 platform :ios, '10.0'
 
 def core_pods
-    # swift를 Rx로 Wrapping 한 라이브러리 입니다.
+    # https://github.com/ReactiveX/RxSwift
+    # Reactive Programming in Swift
     pod 'RxSwift'
 
-    # Cocoa Sdk를 Rx로 Wrapping 한 라이브러리입니다.
+    # https://github.com/ReactiveX/RxSwift/tree/master/RxCocoa
+    # It is a library wrapped in Cocoa Sdk as Rx.
     pod 'RxCocoa'
 end
 
@@ -16,10 +18,16 @@ end
 def lint_pods
     # Swift style and conventions
     pod 'SwiftLint'
-end 
+end
+
+def generate_pods
+    # https://github.com/SwiftGen/SwiftGen
+    # SwiftGen is a tool to auto-generate Swift code for resources of your projects, to make them type-safe to use
+    pod 'SwiftGen'
+end
 
 def debugging_pods
-    # 디버깅용
+    # For debugging
     pod 'FLEX', :configurations => ['Debug']
 end
 
@@ -28,15 +36,18 @@ target 'RxSwiftReactorKitSampleApp' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
 
-    # core 라이브러리
+    # core library
     core_pods
 
-    # 아키텍쳐 라이브러리
+    # architecture library
     archi_pods
 
-    # 코딩 스타일
+    # coding style
     lint_pods
 
-    # 디버깅용 라이브러리
+    # code generate
+    generate_pods
+
+    # debugging library
     debugging_pods
 end
