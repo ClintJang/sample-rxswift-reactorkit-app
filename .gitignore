@@ -96,6 +96,14 @@ iOSInjectionProject/
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
 
 ## User settings
+### Pods More
+Podfile.lock
+*.xcworkspace
+
+### More in xcodeproj 
+*.xcuserstate
+xcschememanagement.plist
+contents.xcworkspacedata
 
 ## compatibility with Xcode 8 and earlier (ignoring not required starting Xcode 9)
 
