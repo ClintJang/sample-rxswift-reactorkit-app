@@ -46,11 +46,41 @@ ReactorKit 을 활용해서 기본이 되는 iOS Sample App을 만들어 보려�
 ## 옵션 (Optional)
 - SwifLint
 - [FLEX](https://github.com/Flipboard/FLEX) : For Debugging
+- [firebase](https://firebase.google.com/) : 셈플 소스에는 미적용
+- [crashlytics](https://firebase.google.com/docs/crashlytics/) : 셈플 소스에는 미적용
 - (검토중) Fastlane
 
-## 사용한 라이브러리 (Used Libraries)
-- 작성중
+## 사용한 라이브러리 (Used Libraries)    
+- Installation
+    - [CocoaPods](https://github.com/CocoaPods/CocoaPods)
+    - [Carthage](https://github.com/Carthage/Carthage) : (검토중)
+    
+- Core
+    - [RxSwift](https://github.com/ReactiveX/RxSwift)
+    - [RxCocoa](https://cocoapods.org/pods/RxCocoa)
 
+- Architecture
+    - [ReactorKit](https://github.com/ReactorKit/ReactorKit)
+
+- Network
+    - [Alamofire](https://github.com/Alamofire/Alamofire)
+    - [Moya](https://github.com/Moya/Moya)
+
+- UI
+    - [SnapKit](https://github.com/SnapKit/SnapKit) : 만약 필요하다면
+
+- Log
+    - [Reqres](https://github.com/AckeeCZ/Reqres)
+
+- CI & Documentation
+    - [SwiftLint](https://github.com/realm/SwiftLint)
+    - [SwiftGen](https://github.com/SwiftGen/SwiftGen)
+    - [Fastlane](https://github.com/fastlane/fastlane)
+
+- Analytics
+    - [Firebase](https://firebase.google.com/)
+    - [Crashlytics](https://firebase.google.com/docs/crashlytics)
+    
 ## 시작하기 (Getting started)
 - 작성중
 

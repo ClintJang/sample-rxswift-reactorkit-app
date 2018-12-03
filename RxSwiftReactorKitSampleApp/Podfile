@@ -6,6 +6,7 @@ def core_pods
     pod 'RxSwift'
 
     # https://github.com/ReactiveX/RxSwift/tree/master/RxCocoa
+    # https://cocoapods.org/pods/RxCocoa
     # It is a library wrapped in Cocoa Sdk as Rx.
     pod 'RxCocoa'
 end
