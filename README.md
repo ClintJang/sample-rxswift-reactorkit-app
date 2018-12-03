@@ -17,12 +17,18 @@ ReactorKit 을 활용해서 기본이 되는 iOS Sample App을 만들어 보려�
 - ReactorKit는 Flux와 반응형 프로그래밍의 조합입니다. <br /> 
 사용자 Actions 및 View States는 관찰 가능한 스트림을 통해 각 계층으로 전달됩니다. 이러한 흐름은 단방향입니다. <br />View는 Actions를 보낼 수 만 있고, reactor는 states만 emit 할 수 있습니다.
 
-<img src='https://cloud.githubusercontent.com/assets/931655/25073432/a91c1688-2321-11e7-8f04-bf91031a09dd.png'>
+<img src='https://cloud.githubusercontent.com/assets/931655/25073432/a91c1688-2321-11e7-8f04-bf91031a09dd.png' width="500">
 
 - Action은 사용자 상호 작용을 나타내고 상태는 View State를 나타냅니다. <br /> Mutation은 action과 state 사이에서 브릿지 역활을 합니다. <br />reactor는 mutate() 및 reduce()의 두 단계로 Action 스트림을 State 스트림으로 변환 단계를 거칩니다.
-<img src='https://cloud.githubusercontent.com/assets/931655/25098066/2de21a28-23e2-11e7-8a41-d33d199dd951.png'>
+<img src='https://cloud.githubusercontent.com/assets/931655/25098066/2de21a28-23e2-11e7-8a41-d33d199dd951.png' width="500">
 
 * 상세한 내용은 [https://github.com/ReactorKit/ReactorKit](https://github.com/ReactorKit/ReactorKit) 에서 확인부탁드립니다.
+
+	```
+	ReactorKit은 반응형 단방향 앱을 위한 프레임워크로,
+	StyleShare와 Kakao를 비롯한 여러 기업에서 
+	사용하고 있는 기술입니다.
+	```
 
 ## 컨셉 (Other concepts)
 - (검토중) SwiftGen 을 이용한 지역화 처리
@@ -39,6 +45,7 @@ ReactorKit 을 활용해서 기본이 되는 iOS Sample App을 만들어 보려�
 
 ## 옵션 (Optional)
 - SwifLint
+- [FLEX](https://github.com/Flipboard/FLEX) : For Debugging
 - (검토중) Fastlane
 
 ## 사용한 라이브러리 (Used Libraries)
