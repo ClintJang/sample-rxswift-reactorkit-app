@@ -22,6 +22,7 @@
 		BC18744421B6056F00AD3A01 /* Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC18744321B6056F00AD3A01 /* Localized.swift */; };
 		BC18744621B608FC00AD3A01 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC18744521B608FC00AD3A01 /* Constants.swift */; };
 		BC18744C21B6445900AD3A01 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = BC18744B21B6445800AD3A01 /* .swiftlint.yml */; };
+		BC18744E21B64A1300AD3A01 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC18744D21B64A1300AD3A01 /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		BC18744321B6056F00AD3A01 /* Localized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localized.swift; sourceTree = "<group>"; };
 		BC18744521B608FC00AD3A01 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		BC18744B21B6445800AD3A01 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
+		BC18744D21B64A1300AD3A01 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,6 +236,7 @@
 		BC18744721B60BC700AD3A01 /* Abstract */ = {
 			isa = PBXGroup;
 			children = (
+				BC18744D21B64A1300AD3A01 /* BaseViewController.swift */,
 			);
 			path = Abstract;
 			sourceTree = "<group>";
@@ -399,6 +402,7 @@
 				BC18742521B4FC3900AD3A01 /* MainViewReactor.swift in Sources */,
 				BC18742321B4FC0700AD3A01 /* MainViewController.swift in Sources */,
 				BC18744621B608FC00AD3A01 /* Constants.swift in Sources */,
+				BC18744E21B64A1300AD3A01 /* BaseViewController.swift in Sources */,
 				BC18740421B4C3CF00AD3A01 /* AppDelegate.swift in Sources */,
 				BC18742D21B50A8400AD3A01 /* SettingViewController.swift in Sources */,
 			);

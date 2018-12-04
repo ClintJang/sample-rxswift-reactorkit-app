@@ -8,10 +8,8 @@
 
 import UIKit
 
-class MainViewController: UIViewController, StoryboardView {
+class MainViewController: BaseViewController, StoryboardView {
     @IBOutlet weak var tempLabel: UILabel!
-
-    var disposeBag = DisposeBag()
 
     override func viewDidLoad() {
         super.viewDidLoad()

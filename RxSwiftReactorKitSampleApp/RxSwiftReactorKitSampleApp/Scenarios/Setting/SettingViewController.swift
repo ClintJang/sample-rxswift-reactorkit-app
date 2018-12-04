@@ -8,9 +8,7 @@
 
 import UIKit
 
-class SettingViewController: UIViewController, StoryboardView {
-
-    var disposeBag = DisposeBag()
+class SettingViewController: BaseViewController, StoryboardView {
 
     override func viewDidLoad() {
         super.viewDidLoad()
