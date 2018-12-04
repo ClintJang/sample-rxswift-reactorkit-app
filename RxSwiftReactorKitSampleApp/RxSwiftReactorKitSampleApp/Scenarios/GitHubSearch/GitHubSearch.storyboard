@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tY5-f7-4vM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--GitHubSearch-->
+        <scene sceneID="01k-y4-Iou">
+            <objects>
+                <viewController storyboardIdentifier="GitHubSearchViewController" id="tY5-f7-4vM" customClass="GitHubSearchViewController" customModule="RxSwiftReactorKitSampleApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fa7-N6-UgC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="https://github.com/ReactorKit/ReactorKit/blob/master/Examples/GitHubSearch/README.md" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V6d-Pg-5DS">
+                                <rect key="frame" x="20" y="40" width="335" height="33.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="V6d-Pg-5DS" firstAttribute="leading" secondItem="9ap-k5-fXu" secondAttribute="leading" constant="20" id="8EW-A1-3ks"/>
+                            <constraint firstAttribute="trailing" secondItem="V6d-Pg-5DS" secondAttribute="trailing" constant="20" id="ISa-Px-BHc"/>
+                            <constraint firstItem="V6d-Pg-5DS" firstAttribute="top" secondItem="9ap-k5-fXu" secondAttribute="top" constant="20" id="LXz-s1-Odt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9ap-k5-fXu"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="GitHubSearch" id="HeS-Yb-3WI"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TXi-UE-VA5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34" y="80"/>
+        </scene>
+    </scenes>
+</document>
