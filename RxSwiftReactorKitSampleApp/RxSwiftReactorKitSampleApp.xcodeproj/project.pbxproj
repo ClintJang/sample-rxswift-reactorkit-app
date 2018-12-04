@@ -23,6 +23,7 @@
 		BC18744621B608FC00AD3A01 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC18744521B608FC00AD3A01 /* Constants.swift */; };
 		BC18744C21B6445900AD3A01 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = BC18744B21B6445800AD3A01 /* .swiftlint.yml */; };
 		BC18744E21B64A1300AD3A01 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC18744D21B64A1300AD3A01 /* BaseViewController.swift */; };
+		BC18745021B66F9A00AD3A01 /* Start.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC18744F21B66F9A00AD3A01 /* Start.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		BC18744521B608FC00AD3A01 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		BC18744B21B6445800AD3A01 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
 		BC18744D21B64A1300AD3A01 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		BC18744F21B66F9A00AD3A01 /* Start.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Start.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 				BC18741E21B4F81B00AD3A01 /* Networks */,
 				BC18741A21B4F78400AD3A01 /* Scenarios */,
 				BC18740321B4C3CF00AD3A01 /* AppDelegate.swift */,
+				BC18744F21B66F9A00AD3A01 /* Start.storyboard */,
 				BC18740A21B4C3CF00AD3A01 /* Assets.xcassets */,
 				BC18740C21B4C3CF00AD3A01 /* LaunchScreen.storyboard */,
 				BC18740F21B4C3CF00AD3A01 /* Info.plist */,
@@ -310,6 +313,7 @@
 				BC18740B21B4C3CF00AD3A01 /* Assets.xcassets in Resources */,
 				BC18744C21B6445900AD3A01 /* .swiftlint.yml in Resources */,
 				BC18743321B515A500AD3A01 /* README.md in Resources */,
+				BC18745021B66F9A00AD3A01 /* Start.storyboard in Resources */,
 				BC18742B21B50A7500AD3A01 /* Setting.storyboard in Resources */,
 				BC18740921B4C3CF00AD3A01 /* Main.storyboard in Resources */,
 			);
@@ -576,7 +580,7 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "RxSwiftReactorKitSampleApp/RxSwiftReactorKitSampleApp-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -598,7 +602,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "RxSwiftReactorKitSampleApp/RxSwiftReactorKitSampleApp-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

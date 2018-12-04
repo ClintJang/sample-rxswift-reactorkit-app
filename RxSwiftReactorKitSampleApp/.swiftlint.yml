@@ -1,10 +1,11 @@
 included:
-  - RxSwiftReactorKitSampleApp/Common
-  - RxSwiftReactorKitSampleApp/Abstract
-  - RxSwiftReactorKitSampleApp/Models
-  - RxSwiftReactorKitSampleApp/Services
-  - RxSwiftReactorKitSampleApp/Networks
-  - RxSwiftReactorKitSampleApp/Scenarios
+  - RxSwiftReactorKitSampleApp
+#  - RxSwiftReactorKitSampleApp/Common
+#  - RxSwiftReactorKitSampleApp/Abstract
+#  - RxSwiftReactorKitSampleApp/Models
+#  - RxSwiftReactorKitSampleApp/Services
+#  - RxSwiftReactorKitSampleApp/Networks
+#  - RxSwiftReactorKitSampleApp/Scenarios
 excluded:
   - Carthage
   - Pods

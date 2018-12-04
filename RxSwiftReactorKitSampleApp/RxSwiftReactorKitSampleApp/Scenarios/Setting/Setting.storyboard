@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Setting View Controller-->
+        <!--Setting-->
         <scene sceneID="FLJ-Ya-utT">
             <objects>
                 <viewController id="kPG-6e-IOb" customClass="SettingViewController" customModule="RxSwiftReactorKitSampleApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -20,6 +20,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="eP0-8B-iWg"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Setting" id="Sm7-fj-co8"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mmb-9b-ASx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

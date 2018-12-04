@@ -15,9 +15,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
-        let navigationController = self.window?.rootViewController as! UINavigationController
-        let viewController = navigationController.viewControllers.first as! MainViewController
-        viewController.reactor = MainViewReactor()
+        if let tabBarController = self.window?.rootViewController as? UITabBarController {
+
+            tabBarController.viewControllers?.forEach({ (viewController) in
+                if let controller = viewController as? MainViewController {
+                    controller.reactor = MainViewReactor()
+                } else if let controller = viewController as? SettingViewController {
+                    controller.reactor = SettingViewReactor()
+                }
+
+            })
+        }
 
         return true
     }
