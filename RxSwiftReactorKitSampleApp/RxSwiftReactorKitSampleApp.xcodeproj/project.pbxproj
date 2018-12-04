@@ -20,6 +20,7 @@
 		BC18743321B515A500AD3A01 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = BC18743221B515A500AD3A01 /* README.md */; };
 		BC18743F21B604E400AD3A01 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BC18744121B604E400AD3A01 /* Localizable.strings */; };
 		BC18744421B6056F00AD3A01 /* Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC18744321B6056F00AD3A01 /* Localized.swift */; };
+		BC18744621B608FC00AD3A01 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC18744521B608FC00AD3A01 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		BC18744021B604E400AD3A01 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
 		BC18744221B604E800AD3A01 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		BC18744321B6056F00AD3A01 /* Localized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localized.swift; sourceTree = "<group>"; };
+		BC18744521B608FC00AD3A01 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,6 +222,7 @@
 		BC18743C21B600BB00AD3A01 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
+				BC18744521B608FC00AD3A01 /* Constants.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -372,6 +375,7 @@
 				BC18744421B6056F00AD3A01 /* Localized.swift in Sources */,
 				BC18742521B4FC3900AD3A01 /* MainViewReactor.swift in Sources */,
 				BC18742321B4FC0700AD3A01 /* MainViewController.swift in Sources */,
+				BC18744621B608FC00AD3A01 /* Constants.swift in Sources */,
 				BC18740421B4C3CF00AD3A01 /* AppDelegate.swift in Sources */,
 				BC18742D21B50A8400AD3A01 /* SettingViewController.swift in Sources */,
 			);
