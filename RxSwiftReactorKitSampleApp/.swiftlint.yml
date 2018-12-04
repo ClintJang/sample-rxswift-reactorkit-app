@@ -1,0 +1,130 @@
+included:
+  - RxSwiftReactorKitSampleApp/Common
+  - RxSwiftReactorKitSampleApp/Abstract
+  - RxSwiftReactorKitSampleApp/Models
+  - RxSwiftReactorKitSampleApp/Services
+  - RxSwiftReactorKitSampleApp/Networks
+  - RxSwiftReactorKitSampleApp/Scenarios
+excluded:
+  - Carthage
+  - Pods
+enabled_rules:
+  - conditional_returns_on_newline
+  - closure_spacing
+  - colon
+  - comma
+  - control_statement
+disabled_rules: # rule identifiers to exclude from running
+  - anyobject_protocol
+  - array_init
+  - attributes
+  - closure_end_indentation
+#  - closure_spacing
+  - collection_alignment
+  - contains_over_first_not_nil
+  - empty_count
+  - empty_string
+  - empty_xctest_method
+  - explicit_init
+  - extension_access_modifier
+  - fallthrough
+  - fatal_error_message
+  - file_header
+  - file_name
+  - first_where
+  - identical_operands
+  - joined_default_parameter
+  - let_var_whitespace
+  - literal_expression_end_indentation
+  - lower_acl_than_parent
+  - nimble_operator
+  - number_separator
+  - object_literal
+  - operator_usage_whitespace
+  - overridden_super_call
+  - override_in_extension
+  - pattern_matching_keywords
+  - private_action
+  - private_outlet
+  - prohibited_interface_builder
+  - prohibited_super_call
+  - quick_discouraged_call
+  - quick_discouraged_focused_test
+  - quick_discouraged_pending_test
+  - redundant_nil_coalescing
+  - redundant_type_annotation
+  - single_test_class
+  - sorted_first_last
+  - sorted_imports
+  - static_operator
+  - unavailable_function
+  - unneeded_parentheses_in_closure_argument
+  - untyped_error_in_catch
+  - vertical_parameter_alignment_on_call
+  - vertical_whitespace_closing_braces
+  - vertical_whitespace_opening_braces
+  - yoda_condition
+#opt_in_rules: # some rules are only opt-in
+
+#analyzer_rules: # Rules run by `swiftlint analyze` (experimental)
+#  - unused_import
+#  - unused_private_declaration
+
+# configurable rules can be customized from this configuration file
+# binary rules can set their severity level
+force_cast: warning # implicitly
+force_try:
+  severity: warning # explicitly
+# rules that have both warning and error levels, can set just the warning level
+# implicitly
+line_length: 110
+# they can set both implicitly with an array
+type_body_length:
+  - 300 # warning
+  - 400 # error
+# or they can set both explicitly
+file_length:
+  warning: 500
+  error: 1200
+# naming rules can set warnings/errors for min_length and max_length
+# additionally they can set excluded names
+type_name:
+  min_length: 4 # only warning
+  max_length: # warning and error
+    warning: 40
+    error: 50
+  excluded:
+    - main.swift  
+  
+identifier_name:
+  min_length: # only min_length
+    error: 4 # only error
+  excluded:
+    - id
+number_separator:
+  minimum_length: 5
+
+reporter: "xcode" # reporter type (xcode, json, csv, checkstyle, junit, html, emoji, sonarqube, markdown)
+
+
+#custom_rules:
+#  rule_id:
+#    included: Source/SwiftLintFramework/Rules/.+/\w+\.swift
+#    name: Rule ID
+#    message: Rule IDs must be all lowercase, snake case and not end with `rule`
+#    regex: identifier:\s*("\w+_rule"|"\S*[^a-z_]\S*")
+#    severity: error
+#  fatal_error:
+#    name: Fatal Error
+#    excluded: "Tests/*"
+#    message: Prefer using `queuedFatalError` over `fatalError` to avoid leaking compiler host machine paths.
+#    regex: \bfatalError\b
+#    match_kinds:
+#      - identifier
+#    severity: error
+#  rule_test_function:
+#    included: Tests/SwiftLintFrameworkTests/RulesTests.swift
+#    name: Rule Test Function
+#    message: Rule Test Function mustn't end with `rule`
+#    regex: func\s*test\w+(r|R)ule\(\)
+#    severity: error

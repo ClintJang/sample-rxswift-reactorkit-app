@@ -21,6 +21,7 @@
 		BC18743F21B604E400AD3A01 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BC18744121B604E400AD3A01 /* Localizable.strings */; };
 		BC18744421B6056F00AD3A01 /* Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC18744321B6056F00AD3A01 /* Localized.swift */; };
 		BC18744621B608FC00AD3A01 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC18744521B608FC00AD3A01 /* Constants.swift */; };
+		BC18744C21B6445900AD3A01 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = BC18744B21B6445800AD3A01 /* .swiftlint.yml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		BC18744221B604E800AD3A01 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		BC18744321B6056F00AD3A01 /* Localized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localized.swift; sourceTree = "<group>"; };
 		BC18744521B608FC00AD3A01 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BC18744B21B6445800AD3A01 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 		BC1873F721B4C3CF00AD3A01 = {
 			isa = PBXGroup;
 			children = (
+				BC18744B21B6445800AD3A01 /* .swiftlint.yml */,
 				BC18743221B515A500AD3A01 /* README.md */,
 				BC18740221B4C3CF00AD3A01 /* RxSwiftReactorKitSampleApp */,
 				BC18740121B4C3CF00AD3A01 /* Products */,
@@ -302,6 +305,7 @@
 				BC18740E21B4C3CF00AD3A01 /* LaunchScreen.storyboard in Resources */,
 				BC18743F21B604E400AD3A01 /* Localizable.strings in Resources */,
 				BC18740B21B4C3CF00AD3A01 /* Assets.xcassets in Resources */,
+				BC18744C21B6445900AD3A01 /* .swiftlint.yml in Resources */,
 				BC18743321B515A500AD3A01 /* README.md in Resources */,
 				BC18742B21B50A7500AD3A01 /* Setting.storyboard in Resources */,
 				BC18740921B4C3CF00AD3A01 /* Main.storyboard in Resources */,
@@ -360,13 +364,9 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 			);
 			name = SwiftGen;
-			outputFileListPaths = (
-			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -378,13 +378,9 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 			);
 			name = Swiftlint;
-			outputFileListPaths = (
-			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
