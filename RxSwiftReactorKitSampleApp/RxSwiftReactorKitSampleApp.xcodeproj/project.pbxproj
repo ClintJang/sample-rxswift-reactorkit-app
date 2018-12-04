@@ -248,6 +248,7 @@
 				BC1873FE21B4C3CF00AD3A01 /* Resources */,
 				0F6C615171794D5B045B0E3C /* [CP] Embed Pods Frameworks */,
 				BC18743B21B5FFD300AD3A01 /* SwiftGen */,
+				BC18744821B616F200AD3A01 /* Swiftlint */,
 			);
 			buildRules = (
 			);
@@ -371,6 +372,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "$PODS_ROOT/SwiftGen/bin/swiftgen strings --param enumName=Localized \"${SRCROOT}/${TARGETNAME}/Resources/Localizable/ko.lproj/Localizable.strings\" -t structured-swift4 -o \"${SRCROOT}/${TARGETNAME}/Resources/Localizable/Localized.swift\"\n";
+		};
+		BC18744821B616F200AD3A01 /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which ${PODS_ROOT}/SwiftLint/swiftlint >/dev/null; then\n${PODS_ROOT}/SwiftLint/swiftlint autocorrect\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 

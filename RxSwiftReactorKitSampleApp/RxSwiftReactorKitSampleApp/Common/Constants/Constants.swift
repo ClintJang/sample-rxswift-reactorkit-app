@@ -6,8 +6,6 @@
 //  Copyright © 2018 clintjang. All rights reserved.
 //
 
-import Foundation
-
 struct Constants {
-    
+
 }

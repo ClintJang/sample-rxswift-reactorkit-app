@@ -6,15 +6,15 @@
 //  Copyright © 2018 clintjang. All rights reserved.
 //
 
-final class SettingViewReactor : Reactor {
-    
+final class SettingViewReactor: Reactor {
+
     enum Action {
         case Temp
     }
-    
+
     struct State {
         var temp: String = "Temp"
     }
-    
+
     var initialState = State()
 }

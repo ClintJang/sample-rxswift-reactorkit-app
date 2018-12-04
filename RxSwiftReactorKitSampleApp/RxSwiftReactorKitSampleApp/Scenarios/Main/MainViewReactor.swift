@@ -11,11 +11,10 @@ final class MainViewReactor: Reactor {
     enum Action {
         case temp
     }
-    
+
     struct State {
         var isTemp: Bool = false
     }
-    
+
     let initialState = State()
 }
-
