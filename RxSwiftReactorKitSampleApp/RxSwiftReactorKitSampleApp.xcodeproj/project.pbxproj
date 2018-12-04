@@ -100,6 +100,8 @@
 				BC18741721B4F72D00AD3A01 /* Data */,
 				BC18741821B4F74400AD3A01 /* Resources */,
 				BC18741921B4F76700AD3A01 /* Common */,
+				BC18744721B60BC700AD3A01 /* Abstract */,
+				BC18741F21B4FBBD00AD3A01 /* Models */,
 				BC18741B21B4F7B300AD3A01 /* Services */,
 				BC18741E21B4F81B00AD3A01 /* Networks */,
 				BC18741A21B4F78400AD3A01 /* Scenarios */,
@@ -133,7 +135,6 @@
 				BC18743C21B600BB00AD3A01 /* Constants */,
 				BC18741C21B4F7E700AD3A01 /* Extensions */,
 				BC18741D21B4F7EF00AD3A01 /* Types */,
-				BC18741F21B4FBBD00AD3A01 /* Models */,
 				BC18742021B4FBD200AD3A01 /* Views */,
 			);
 			path = Common;
@@ -225,6 +226,13 @@
 				BC18744521B608FC00AD3A01 /* Constants.swift */,
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		BC18744721B60BC700AD3A01 /* Abstract */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Abstract;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
