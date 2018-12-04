@@ -18,6 +18,8 @@
 		BC18742D21B50A8400AD3A01 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC18742C21B50A8400AD3A01 /* SettingViewController.swift */; };
 		BC18742F21B50A9600AD3A01 /* SettingViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC18742E21B50A9600AD3A01 /* SettingViewReactor.swift */; };
 		BC18743321B515A500AD3A01 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = BC18743221B515A500AD3A01 /* README.md */; };
+		BC18743F21B604E400AD3A01 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BC18744121B604E400AD3A01 /* Localizable.strings */; };
+		BC18744421B6056F00AD3A01 /* Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC18744321B6056F00AD3A01 /* Localized.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,9 @@
 		BC18742C21B50A8400AD3A01 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		BC18742E21B50A9600AD3A01 /* SettingViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewReactor.swift; sourceTree = "<group>"; };
 		BC18743221B515A500AD3A01 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		BC18744021B604E400AD3A01 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
+		BC18744221B604E800AD3A01 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		BC18744321B6056F00AD3A01 /* Localized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localized.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +120,7 @@
 		BC18741821B4F74400AD3A01 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				BC18743421B5FE9600AD3A01 /* Localizable */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -122,6 +128,7 @@
 		BC18741921B4F76700AD3A01 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				BC18743C21B600BB00AD3A01 /* Constants */,
 				BC18741C21B4F7E700AD3A01 /* Extensions */,
 				BC18741D21B4F7EF00AD3A01 /* Types */,
 				BC18741F21B4FBBD00AD3A01 /* Models */,
@@ -201,6 +208,22 @@
 			path = Setting;
 			sourceTree = "<group>";
 		};
+		BC18743421B5FE9600AD3A01 /* Localizable */ = {
+			isa = PBXGroup;
+			children = (
+				BC18744321B6056F00AD3A01 /* Localized.swift */,
+				BC18744121B604E400AD3A01 /* Localizable.strings */,
+			);
+			path = Localizable;
+			sourceTree = "<group>";
+		};
+		BC18743C21B600BB00AD3A01 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -213,6 +236,7 @@
 				BC1873FD21B4C3CF00AD3A01 /* Frameworks */,
 				BC1873FE21B4C3CF00AD3A01 /* Resources */,
 				0F6C615171794D5B045B0E3C /* [CP] Embed Pods Frameworks */,
+				BC18743B21B5FFD300AD3A01 /* SwiftGen */,
 			);
 			buildRules = (
 			);
@@ -246,6 +270,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ko,
 			);
 			mainGroup = BC1873F721B4C3CF00AD3A01;
 			productRefGroup = BC18740121B4C3CF00AD3A01 /* Products */;
@@ -263,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC18740E21B4C3CF00AD3A01 /* LaunchScreen.storyboard in Resources */,
+				BC18743F21B604E400AD3A01 /* Localizable.strings in Resources */,
 				BC18740B21B4C3CF00AD3A01 /* Assets.xcassets in Resources */,
 				BC18743321B515A500AD3A01 /* README.md in Resources */,
 				BC18742B21B50A7500AD3A01 /* Setting.storyboard in Resources */,
@@ -317,6 +343,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		BC18743B21B5FFD300AD3A01 /* SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftGen;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "$PODS_ROOT/SwiftGen/bin/swiftgen strings --param enumName=Localized \"${SRCROOT}/${TARGETNAME}/Resources/Localizable/ko.lproj/Localizable.strings\" -t structured-swift4 -o \"${SRCROOT}/${TARGETNAME}/Resources/Localizable/Localized.swift\"\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -325,6 +369,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC18742F21B50A9600AD3A01 /* SettingViewReactor.swift in Sources */,
+				BC18744421B6056F00AD3A01 /* Localized.swift in Sources */,
 				BC18742521B4FC3900AD3A01 /* MainViewReactor.swift in Sources */,
 				BC18742321B4FC0700AD3A01 /* MainViewController.swift in Sources */,
 				BC18740421B4C3CF00AD3A01 /* AppDelegate.swift in Sources */,
@@ -351,6 +396,15 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		BC18744121B604E400AD3A01 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC18744021B604E400AD3A01 /* ko */,
+				BC18744221B604E800AD3A01 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -358,6 +412,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -419,6 +474,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
