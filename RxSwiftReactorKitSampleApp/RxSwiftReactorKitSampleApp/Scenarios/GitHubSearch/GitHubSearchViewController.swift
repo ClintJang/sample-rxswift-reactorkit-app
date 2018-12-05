@@ -10,6 +10,8 @@ import UIKit
 
 class GitHubSearchViewController: BaseViewController, StoryboardView {
 
+    lazy var reactor = GitHubSearchViewReactor()
+
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -10,6 +10,8 @@ import UIKit
 
 class SettingViewController: BaseViewController, StoryboardView {
 
+    lazy var reactor = SettingViewReactor()
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
