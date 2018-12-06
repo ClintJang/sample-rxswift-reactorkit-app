@@ -11,10 +11,9 @@ import UIKit
 class MainViewController: BaseViewController, StoryboardView {
     @IBOutlet weak var tempLabel: UILabel!
 
-    lazy var reactor = MainViewReactor()
-
     override func viewDidLoad() {
         super.viewDidLoad()
+        reactor = MainViewReactor()
 
         // SwiftGen Test Setting
         tempLabel.text = Localized.coding
