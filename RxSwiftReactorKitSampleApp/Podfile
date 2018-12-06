@@ -1,5 +1,30 @@
 platform :ios, '10.0'
 
+# 2018-12-06
+#Using Alamofire (4.8.0)
+#Using FLEX (2.4.0)
+#Using Firebase (5.13.0)
+#Using FirebaseAnalytics (5.3.0)
+#Using FirebaseAnalyticsInterop (1.1.0)
+#Using FirebaseCore (5.1.8)
+#Using FirebaseInstanceID (3.3.0)
+#Using FirebaseMessaging (3.2.1)
+#Using GoogleAppMeasurement (5.3.0)
+#Using GoogleUtilities (5.3.6)
+#Using Moya (12.0.1)
+#Using Protobuf (3.6.1)
+#Using ReactorKit (1.2.1)
+#Using Reqres (3.0.0)
+#Using Result (4.0.0)
+#Using RxAtomic (4.4.0)
+#Using RxCocoa (4.4.0)
+#Using RxFlow (1.6.2)
+#Using RxSwift (4.4.0)
+#Using Starscream (3.0.6)
+#Using SwiftGen (6.0.2)
+#Using SwiftLint (0.29.1)
+#Using nanopb (0.3.901)
+
 def core_pods
     # https://github.com/ReactiveX/RxSwift
     # Reactive Programming in Swift
@@ -14,6 +39,21 @@ end
 def archi_pods
     # https://github.com/ReactorKit/ReactorKit
     pod 'ReactorKit'
+end
+
+def network_restful_pods
+    # https://github.com/Moya/Moya
+    pod 'Moya'
+end
+
+def network_socket_pods
+    # https://github.com/daltoniam/Starscream
+    pod 'Starscream'
+end
+
+def navigation_pods
+    # https://github.com/RxSwiftCommunity/RxFlow
+    pod 'RxFlow'
 end
 
 def lint_pods
@@ -32,6 +72,16 @@ def debugging_pods
     pod 'FLEX', :configurations => ['Debug']
 end
 
+def log_pods
+    # https://github.com/AckeeCZ/Reqres
+    pod 'Reqres'
+end
+
+def firebase_pods
+    # https://firebase.google.com/docs/ios/setup?hl=ko
+    pod 'Firebase/Core'
+    pod 'Firebase/Messaging'
+end
 
 target 'RxSwiftReactorKitSampleApp' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
@@ -42,7 +92,14 @@ target 'RxSwiftReactorKitSampleApp' do
 
     # architecture library
     archi_pods
+    
+    # Network
+    network_restful_pods
+    network_socket_pods
 
+    # navigation
+    navigation_pods
+    
     # coding style
     lint_pods
 
@@ -51,4 +108,10 @@ target 'RxSwiftReactorKitSampleApp' do
 
     # debugging library
     debugging_pods
+    
+    # log library
+    log_pods
+    
+    # firebase library
+    firebase_pods
 end
