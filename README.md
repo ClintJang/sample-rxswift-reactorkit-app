@@ -63,11 +63,17 @@ ReactorKit 을 활용해서 기본이 되는 iOS Sample App을 만들어 보려�
     - [ReactorKit](https://github.com/ReactorKit/ReactorKit)
 
 - Network
-    - [Alamofire](https://github.com/Alamofire/Alamofire)
-    - [Moya](https://github.com/Moya/Moya)
+	- RESTful
+		- [Alamofire](https://github.com/Alamofire/Alamofire)
+		- [Moya](https://github.com/Moya/Moya)
+	- Socket
+		- [Starscream](https://github.com/daltoniam/Starscream)
 
 - UI
     - [SnapKit](https://github.com/SnapKit/SnapKit) : 만약 필요하다면
+    
+- Navigation
+	- [RxFlow](https://github.com/RxSwiftCommunity/RxFlow) : 검토중
 
 - Log
     - [Reqres](https://github.com/AckeeCZ/Reqres)
