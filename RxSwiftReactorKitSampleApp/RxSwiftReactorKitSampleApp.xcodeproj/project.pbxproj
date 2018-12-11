@@ -27,6 +27,7 @@
 		BC18745321B67C7900AD3A01 /* GitHubSearch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC18745221B67C7900AD3A01 /* GitHubSearch.storyboard */; };
 		BC18745521B67CAE00AD3A01 /* GitHubSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC18745421B67CAE00AD3A01 /* GitHubSearchViewController.swift */; };
 		BC18745721B67CE100AD3A01 /* GitHubSearchViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC18745621B67CE100AD3A01 /* GitHubSearchViewReactor.swift */; };
+		BC18751921C06B7700AD3A01 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC18751821C06B7700AD3A01 /* Network.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		BC18745221B67C7900AD3A01 /* GitHubSearch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GitHubSearch.storyboard; sourceTree = "<group>"; };
 		BC18745421B67CAE00AD3A01 /* GitHubSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubSearchViewController.swift; sourceTree = "<group>"; };
 		BC18745621B67CE100AD3A01 /* GitHubSearchViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubSearchViewReactor.swift; sourceTree = "<group>"; };
+		BC18751821C06B7700AD3A01 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +190,10 @@
 		BC18741E21B4F81B00AD3A01 /* Networks */ = {
 			isa = PBXGroup;
 			children = (
+				BC18751821C06B7700AD3A01 /* Network.swift */,
+				BC18751521C06B0C00AD3A01 /* Router */,
+				BC18751721C06B5F00AD3A01 /* Request */,
+				BC18751621C06B1C00AD3A01 /* Response */,
 			);
 			path = Networks;
 			sourceTree = "<group>";
@@ -259,6 +265,27 @@
 				BC18745621B67CE100AD3A01 /* GitHubSearchViewReactor.swift */,
 			);
 			path = GitHubSearch;
+			sourceTree = "<group>";
+		};
+		BC18751521C06B0C00AD3A01 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		BC18751621C06B1C00AD3A01 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		BC18751721C06B5F00AD3A01 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Request;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -442,6 +469,7 @@
 				BC18744421B6056F00AD3A01 /* Localized.swift in Sources */,
 				BC18742521B4FC3900AD3A01 /* MainViewReactor.swift in Sources */,
 				BC18742321B4FC0700AD3A01 /* MainViewController.swift in Sources */,
+				BC18751921C06B7700AD3A01 /* Network.swift in Sources */,
 				BC18744621B608FC00AD3A01 /* Constants.swift in Sources */,
 				BC18744E21B64A1300AD3A01 /* BaseViewController.swift in Sources */,
 				BC18740421B4C3CF00AD3A01 /* AppDelegate.swift in Sources */,
