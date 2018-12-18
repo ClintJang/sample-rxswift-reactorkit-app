@@ -30,6 +30,7 @@
 		BC18751921C06B7700AD3A01 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC18751821C06B7700AD3A01 /* Networking.swift */; };
 		BC6B989721C9498B000FDD98 /* SampleStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6B989621C9498B000FDD98 /* SampleStep.swift */; };
 		BC6B989921C94A18000FDD98 /* AppFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6B989821C94A18000FDD98 /* AppFlow.swift */; };
+		BC6B989C21C95162000FDD98 /* PreferencesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6B989B21C95162000FDD98 /* PreferencesService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		BC18751821C06B7700AD3A01 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		BC6B989621C9498B000FDD98 /* SampleStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleStep.swift; sourceTree = "<group>"; };
 		BC6B989821C94A18000FDD98 /* AppFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlow.swift; sourceTree = "<group>"; };
+		BC6B989B21C95162000FDD98 /* PreferencesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,7 +124,7 @@
 				BC18744721B60BC700AD3A01 /* Abstract */,
 				BC6B989521C94964000FDD98 /* Flows */,
 				BC18741F21B4FBBD00AD3A01 /* Models */,
-				BC18741B21B4F7B300AD3A01 /* Services */,
+				BC6B989A21C95148000FDD98 /* Services */,
 				BC18741E21B4F81B00AD3A01 /* Networking */,
 				BC18741A21B4F78400AD3A01 /* Scenarios */,
 				BC18740321B4C3CF00AD3A01 /* AppDelegate.swift */,
@@ -169,13 +171,6 @@
 				BC18742921B50A5500AD3A01 /* Setting */,
 			);
 			path = Scenarios;
-			sourceTree = "<group>";
-		};
-		BC18741B21B4F7B300AD3A01 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Services;
 			sourceTree = "<group>";
 		};
 		BC18741C21B4F7E700AD3A01 /* Extensions */ = {
@@ -276,6 +271,14 @@
 				BC6B989821C94A18000FDD98 /* AppFlow.swift */,
 			);
 			path = Flows;
+			sourceTree = "<group>";
+		};
+		BC6B989A21C95148000FDD98 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				BC6B989B21C95162000FDD98 /* PreferencesService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -474,6 +477,7 @@
 			files = (
 				BC6B989921C94A18000FDD98 /* AppFlow.swift in Sources */,
 				BC18745521B67CAE00AD3A01 /* GitHubSearchViewController.swift in Sources */,
+				BC6B989C21C95162000FDD98 /* PreferencesService.swift in Sources */,
 				BC18742F21B50A9600AD3A01 /* SettingViewReactor.swift in Sources */,
 				BC18744421B6056F00AD3A01 /* Localized.swift in Sources */,
 				BC18742521B4FC3900AD3A01 /* MainViewReactor.swift in Sources */,

@@ -43,6 +43,7 @@
 - iOS 10.0+
 	- 90% 이상이 최신 OS와 한단계 전 OS를 사용.
 	- https://developer.apple.com/support/app-store/
+	- [iOS OS버전을 사용하는 지나간 통계 정보](https://github.com/ClintJang/ios-swift-objc-questions-and-answers/blob/master/README.md#ios-%EB%B0%B0%ED%8F%AC-%EC%B5%9C%EC%86%8C-%EB%B2%84%EC%A0%84%EC%97%90-%EB%8C%80%ED%95%B4-%EA%B3%A0%EB%AF%BC%EC%A4%91%EC%9E%85%EB%8B%88%EB%8B%A4-ios-os%EB%B2%84%EC%A0%84%EC%9D%84-%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94-%ED%86%B5%EA%B3%84-%EC%A0%95%EB%B3%B4%EB%A5%BC-%EC%95%8C-%EC%88%98-%EC%9E%88%EB%8A%94-%EC%A0%95%EB%B3%B4%EB%82%98-%EB%A7%81%ED%81%AC%EA%B0%80-%EC%9E%88%EC%9D%84%EA%B9%8C%EC%9A%94)
 - SwiftGen
 
 ## 옵션 (Optional)
