@@ -92,3 +92,9 @@ ReactorKit 을 활용해서 기본이 되는 iOS Sample App을 만들어 보려�
 
 ## 샘플 앱
 - 작성중
+
+## 주요 참조한 링크
+> RxSwift 구현 방식, 소스활용 등등 여러가지로 참고 하였습니다.
+
+- [Drrrible](https://github.com/devxoul/Drrrible) : ReactorKit을 사용하는 비공식 Dribbble iOS 응용 프로그램입니다.
+- [awesome-blogs-ios](https://github.com/tilltue/awesome-blogs-ios) : 어썸블로그 ・ 개발 블로그 모음 ・ 개발 잡덕들을 위한 본격 고퀄리티 개발 블로그 큐레이션 서비스 🕵️‍♀️ - iOS 버전.
