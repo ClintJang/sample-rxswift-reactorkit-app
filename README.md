@@ -1,13 +1,14 @@
 # RxSwift ReactorKit Sample App
-- 프로젝트 개발 시, 샘플용 기본 구조가 될 만한 샘플 앱을 만들어 보려 합니다.
+- 프로젝트 개발 설계 할때, 기본 구조에 참고 할만한(될만한) 샘플 앱을 만들어 보려 합니다.
 
 ## 상세 설명 (Description)
-ReactorKit 을 활용해서 기본이 되는 iOS Sample App을 만들어 보려고 합니다.
+`RxSwift` 기반에 `ReactorKit` 아키텍쳐 라이브러리를 활용하여, `iOS Sample App`을 만들어보려합니다.
 
 ## 아키텍쳐 컨셉 (Architecture Concepts)
 - [Reactive eXtensions(RX)](http://reactivex.io/) 
 - [ReactorKit](https://github.com/ReactorKit/ReactorKit)
-	- Flux + RX (Reactive eXtentsion)
+	- [Flux Architecture](https://facebook.github.io/flux/) + RX (Reactive eXtentsion)
+	- **A framework** for a reactive and unidirectional Swift application architecture
 - Data Binding (using [RxSwift](https://github.com/ReactiveX/RxSwift))
 - Dependencies management (using [Cocoapods](https://cocoapods.org/))
 
@@ -47,19 +48,27 @@ ReactorKit 을 활용해서 기본이 되는 iOS Sample App을 만들어 보려�
 ## 옵션 (Optional)
 - SwiftLint
 - [FLEX](https://github.com/Flipboard/FLEX) : For Debugging
-- [firebase](https://firebase.google.com/) : 셈플 소스에는 미적용
-- [crashlytics](https://firebase.google.com/docs/crashlytics/) : 셈플 소스에는 미적용
+- [firebase](https://firebase.google.com/) : 샘플 소스에는 미적용
+- [crashlytics](https://firebase.google.com/docs/crashlytics/) : 샘플 소스에는 미적용
 - (검토중) Fastlane
 
 ## 사용한 라이브러리 (Used Libraries)    
 - Installation
     - [CocoaPods](https://github.com/CocoaPods/CocoaPods)
     - [Carthage](https://github.com/Carthage/Carthage) 
-    	- 현재 셈플 소스라서 반드시 필요할 경우에만 사용, 쉽게 셋팅할 수 있도록 pods만을 최대한 활용해서 적용해 두려고 합니다.
+    	- 현재 샘플 소스라서 반드시 필요할 경우에만 사용, 쉽게 셋팅할 수 있도록 pods만을 최대한 활용해서 적용해 두려고 합니다.
     
 - Core
     - [RxSwift](https://github.com/ReactiveX/RxSwift)
     - [RxCocoa](https://cocoapods.org/pods/RxCocoa)
+    - RxCodable
+    - RxDataSources
+    - Differentiator
+    - RxOptional
+    - RxKeyboard
+    - RxGesture
+    - RxViewController
+    - SectionReactor
 
 - Architecture
     - [ReactorKit](https://github.com/ReactorKit/ReactorKit)
@@ -90,9 +99,13 @@ ReactorKit 을 활용해서 기본이 되는 iOS Sample App을 만들어 보려�
     - [Crashlytics](https://firebase.google.com/docs/crashlytics)
     
 ## 시작하기 (Getting started)
+
+### Cocoapods 설정
 - 작성중
 
 ## 샘플 앱
+
+### 구조
 - 작성중
 
 ## 주요 참조한 링크
@@ -100,3 +113,5 @@ ReactorKit 을 활용해서 기본이 되는 iOS Sample App을 만들어 보려�
 
 - [Drrrible](https://github.com/devxoul/Drrrible) : ReactorKit을 사용하는 비공식 Dribbble iOS 응용 프로그램입니다.
 - [awesome-blogs-ios](https://github.com/tilltue/awesome-blogs-ios) : 어썸블로그 ・ 개발 블로그 모음 ・ 개발 잡덕들을 위한 본격 고퀄리티 개발 블로그 큐레이션 서비스 🕵️‍♀️ - iOS 버전.
+- [ReactorKit Examples](https://github.com/ReactorKit/ReactorKit/tree/master/Examples) : ReactorKit 예제 소스
+- [RxFlow Demo](https://github.com/RxSwiftCommunity/RxFlow/tree/develop/RxFlowDemo) : RxFlow Demo 소스
