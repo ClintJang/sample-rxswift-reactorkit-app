@@ -28,6 +28,8 @@
 		BC18745521B67CAE00AD3A01 /* GitHubSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC18745421B67CAE00AD3A01 /* GitHubSearchViewController.swift */; };
 		BC18745721B67CE100AD3A01 /* GitHubSearchViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC18745621B67CE100AD3A01 /* GitHubSearchViewReactor.swift */; };
 		BC18751921C06B7700AD3A01 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC18751821C06B7700AD3A01 /* Networking.swift */; };
+		BC6B989721C9498B000FDD98 /* SampleStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6B989621C9498B000FDD98 /* SampleStep.swift */; };
+		BC6B989921C94A18000FDD98 /* AppFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6B989821C94A18000FDD98 /* AppFlow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +60,8 @@
 		BC18745421B67CAE00AD3A01 /* GitHubSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubSearchViewController.swift; sourceTree = "<group>"; };
 		BC18745621B67CE100AD3A01 /* GitHubSearchViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubSearchViewReactor.swift; sourceTree = "<group>"; };
 		BC18751821C06B7700AD3A01 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		BC6B989621C9498B000FDD98 /* SampleStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleStep.swift; sourceTree = "<group>"; };
+		BC6B989821C94A18000FDD98 /* AppFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +120,7 @@
 				BC18741821B4F74400AD3A01 /* Resources */,
 				BC18741921B4F76700AD3A01 /* Common */,
 				BC18744721B60BC700AD3A01 /* Abstract */,
+				BC6B989521C94964000FDD98 /* Flows */,
 				BC18741F21B4FBBD00AD3A01 /* Models */,
 				BC18741B21B4F7B300AD3A01 /* Services */,
 				BC18741E21B4F81B00AD3A01 /* Networking */,
@@ -264,6 +269,15 @@
 			path = GitHubSearch;
 			sourceTree = "<group>";
 		};
+		BC6B989521C94964000FDD98 /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				BC6B989621C9498B000FDD98 /* SampleStep.swift */,
+				BC6B989821C94A18000FDD98 /* AppFlow.swift */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -359,6 +373,7 @@
 				"${BUILT_PRODUCTS_DIR}/ReactorKit/ReactorKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Reqres/Reqres.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/Reusable/Reusable.framework",
 				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCodable/RxCodable.framework",
@@ -384,6 +399,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactorKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reqres.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reusable.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCodable.framework",
@@ -456,11 +472,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC6B989921C94A18000FDD98 /* AppFlow.swift in Sources */,
 				BC18745521B67CAE00AD3A01 /* GitHubSearchViewController.swift in Sources */,
 				BC18742F21B50A9600AD3A01 /* SettingViewReactor.swift in Sources */,
 				BC18744421B6056F00AD3A01 /* Localized.swift in Sources */,
 				BC18742521B4FC3900AD3A01 /* MainViewReactor.swift in Sources */,
 				BC18742321B4FC0700AD3A01 /* MainViewController.swift in Sources */,
+				BC6B989721C9498B000FDD98 /* SampleStep.swift in Sources */,
 				BC18751921C06B7700AD3A01 /* Networking.swift in Sources */,
 				BC18744621B608FC00AD3A01 /* Constants.swift in Sources */,
 				BC18744E21B64A1300AD3A01 /* BaseViewController.swift in Sources */,

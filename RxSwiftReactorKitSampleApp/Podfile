@@ -78,6 +78,10 @@ def navigation_pods
     pod 'RxFlow'
 end
 
+def etc_pods
+    pod 'Reusable'
+end
+
 def lint_pods
     # Swift style and conventions
     pod 'SwiftLint'
@@ -123,6 +127,9 @@ target 'RxSwiftReactorKitSampleApp' do
 
     # navigation
     navigation_pods
+    
+    # Misc.
+    etc_pods
     
     # coding style
     lint_pods
