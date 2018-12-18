@@ -34,6 +34,17 @@ def core_pods
     # https://cocoapods.org/pods/RxCocoa
     # It is a library wrapped in Cocoa Sdk as Rx.
     pod 'RxCocoa'
+    
+    
+    # Rx
+    pod 'RxCodable'
+    pod 'RxDataSources'
+    pod 'Differentiator'
+    pod 'RxOptional'
+    pod 'RxKeyboard'
+    pod 'RxGesture'
+    pod 'RxViewController'
+    pod 'SectionReactor'
 end
 
 def archi_pods
@@ -41,12 +52,13 @@ def archi_pods
     pod 'ReactorKit'
 end
 
-def network_restful_pods
+def network_pods
     # https://github.com/Moya/Moya
     pod 'Moya'
+    
 end
 
-def network_socket_pods
+def socket_pods
     # https://github.com/daltoniam/Starscream
     pod 'Starscream'
 end
@@ -94,8 +106,10 @@ target 'RxSwiftReactorKitSampleApp' do
     archi_pods
     
     # Network
-    network_restful_pods
-    network_socket_pods
+    network_pods
+    
+    # Socket
+    socket_pods
 
     # navigation
     navigation_pods

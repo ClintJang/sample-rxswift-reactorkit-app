@@ -31,7 +31,8 @@ ReactorKit 을 활용해서 기본이 되는 iOS Sample App을 만들어 보려�
 	```
 
 ## 컨셉 (Other concepts)
-- (검토중) SwiftGen 을 이용한 지역화 처리
+- SwiftGen 을 이용한 지역화 처리
+- SwiftLint 를 이용하여 스타일 규칙 적용
 - Storyboards 를 UI 구현으로 사용
 - XIBs 공통 UI에 사용
 
@@ -41,10 +42,10 @@ ReactorKit 을 활용해서 기본이 되는 iOS Sample App을 만들어 보려�
 - iOS 10.0+
 	- 90% 이상이 최신 OS와 한단계 전 OS를 사용.
 	- https://developer.apple.com/support/app-store/
-- (검토중) SwiftGen
+- SwiftGen
 
 ## 옵션 (Optional)
-- SwifLint
+- SwiftLint
 - [FLEX](https://github.com/Flipboard/FLEX) : For Debugging
 - [firebase](https://firebase.google.com/) : 셈플 소스에는 미적용
 - [crashlytics](https://firebase.google.com/docs/crashlytics/) : 셈플 소스에는 미적용
@@ -53,7 +54,8 @@ ReactorKit 을 활용해서 기본이 되는 iOS Sample App을 만들어 보려�
 ## 사용한 라이브러리 (Used Libraries)    
 - Installation
     - [CocoaPods](https://github.com/CocoaPods/CocoaPods)
-    - [Carthage](https://github.com/Carthage/Carthage) : (검토중)
+    - [Carthage](https://github.com/Carthage/Carthage) 
+    	- 현재 셈플 소스라서 반드시 필요할 경우에만 사용, 쉽게 셋팅할 수 있도록 pods만을 최대한 활용해서 적용해 두려고 합니다.
     
 - Core
     - [RxSwift](https://github.com/ReactiveX/RxSwift)
@@ -70,10 +72,10 @@ ReactorKit 을 활용해서 기본이 되는 iOS Sample App을 만들어 보려�
 		- [Starscream](https://github.com/daltoniam/Starscream)
 
 - UI
-    - [SnapKit](https://github.com/SnapKit/SnapKit) : 만약 필요하다면
+    - [SnapKit](https://github.com/SnapKit/SnapKit)
     
 - Navigation
-	- [RxFlow](https://github.com/RxSwiftCommunity/RxFlow) : 검토중
+	- [RxFlow](https://github.com/RxSwiftCommunity/RxFlow)
 
 - Log
     - [Reqres](https://github.com/AckeeCZ/Reqres)
@@ -94,7 +96,7 @@ ReactorKit 을 활용해서 기본이 되는 iOS Sample App을 만들어 보려�
 - 작성중
 
 ## 주요 참조한 링크
-> RxSwift 구현 방식, 소스활용 등등 여러가지로 참고 하였습니다.
+> Rx 구현 방식, 폴더 구조, 소스활용, ReactorKit 활용, Moya 네트워크 처리 방법 등등 여러가지로 참고 하였습니다.
 
 - [Drrrible](https://github.com/devxoul/Drrrible) : ReactorKit을 사용하는 비공식 Dribbble iOS 응용 프로그램입니다.
 - [awesome-blogs-ios](https://github.com/tilltue/awesome-blogs-ios) : 어썸블로그 ・ 개발 블로그 모음 ・ 개발 잡덕들을 위한 본격 고퀄리티 개발 블로그 큐레이션 서비스 🕵️‍♀️ - iOS 버전.
