@@ -36,6 +36,17 @@
 - SwiftLint 를 이용하여 스타일 규칙 적용
 - Storyboards 를 UI 구현으로 사용
 - XIBs 공통 UI에 사용
+- RxFlow라는 Reactive Flow Coordinator를 구현해주는 프레임워크를 활용하였습니다.
+	- [설명 블로그](https://pilgwon.github.io/blog/2018/11/14/RxFlow-Part-1-Theory.html)
+
+#### RxFlow 장점
+- 스토리보드를 유닛 단위로 쪼개서 UIViewController의 재사용성을 높임.
+- 네비게이션의 흐름(context)에 맞게 UIViewController를 다른 방식으로 보여줌.
+- 의존성 주입(Dependency Injection)을 쉽게 구현.
+- UIViewController에 있는 모든 네비게이션 매커니즘을 삭제.
+- 반응형 프로그래밍(Reactive Programming) 사용을 촉진.
+- 네비게이션에서 일어나는 대부분의 케이스를 처리하면서 선언형으로 표현.
+- 어플리케이션을 네비게이션의 논리적인 블록으로 나누어 처리.
 
 ## 요구사항 (Requirements)
 - Cocoapods
