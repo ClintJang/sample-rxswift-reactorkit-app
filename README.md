@@ -9,8 +9,9 @@
     - [Counter](https://github.com/ReactorKit/ReactorKit/tree/master/Examples/Counter)
     - [GitHubSearch](https://github.com/ReactorKit/ReactorKit/tree/master/Examples/GitHubSearch)
 - 나머지 화면은 라이센스 사용 목록을 보여주는 정도로 할 예정입니다.
-- [GitHubSearch](https://github.com/ReactorKit/ReactorKit/tree/master/Examples/GitHubSearch) 에서 네트워크 처리한 부분은 [Drrrible](https://github.com/devxoul/Drrrible) 에서 네트워크 처리한 부분(Moya, MoyaSugar)을 참고한 방식으로 변경할 예정입니다.
+- [GitHubSearch](https://github.com/ReactorKit/ReactorKit/tree/master/Examples/GitHubSearch) 에서 네트워크 처리한 부분은 [Drrrible](https://github.com/devxoul/Drrrible) 에서 네트워크 처리한 부분([Moya](https://github.com/Moya/Moya), [MoyaSugar](https://github.com/devxoul/MoyaSugar))을 참고한 방식으로 변경할 예정입니다.
     - MoyaSugar가 4.2 대응이 되어있지 않아 포크떠서 수정한 링크를 사용할 것입니다. Moya의 Rx 활용을 보여주는 부분이라 Moya를 처음 사용한다면, MoyaSugar를 참고 하면 좋으실 것이라 생각됩니다.
+- [awesome-blogs-ios](https://github.com/tilltue/awesome-blogs-ios) 소스도 참고하고 있습니다. 유용하다 판단되는 부분은 적극 활용하려고 합니다.
 
 ## 아키텍쳐 컨셉 (Architecture Concepts)
 - [Reactive eXtensions(RX)](http://reactivex.io/) 
@@ -19,6 +20,8 @@
 	- **A framework** for a reactive and unidirectional Swift application architecture
 - Data Binding (using [RxSwift](https://github.com/ReactiveX/RxSwift))
 - Dependencies management (using [Cocoapods](https://cocoapods.org/))
+- [RxFlow](https://github.com/RxSwiftCommunity/RxFlow) 
+    - navigation framework for iOS applications based on a Flow Coordinator pattern.
 
 ## 아키텍처 패턴 (Architecture Design Patterns)
 ### 샘플 앱은 ReactorKit을 사용합니다.
@@ -45,7 +48,10 @@
 - Storyboards 를 UI 구현으로 사용
 - XIBs 공통 UI에 사용
 - RxFlow라는 Reactive Flow Coordinator를 구현해주는 프레임워크를 활용하였습니다.
-	- [설명 블로그](https://pilgwon.github.io/blog/2018/11/14/RxFlow-Part-1-Theory.html)
+	- 좋은 설명블로그
+		- [RxFlow 파트 1 : 이론](https://pilgwon.github.io/blog/2018/11/14/RxFlow-Part-1-Theory.html)
+		- [RxFlow 파트 2 : 실전](https://pilgwon.github.io/blog/2018/11/14/RxFlow-Part-2-Practice.html)
+		- [RxFlow 파트 3 : 팁과 요령](https://pilgwon.github.io/blog/2018/12/03/RxFlow-Part-3-Tips-And-Tricks.html)
 
 #### RxFlow 장점
 - 스토리보드를 유닛 단위로 쪼개서 UIViewController의 재사용성을 높임.

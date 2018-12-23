@@ -7,9 +7,10 @@
 //
 
 import UIKit
+import Reusable
 import SafariServices
 
-class GitHubSearchViewController: BaseViewController, StoryboardView {
+class GitHubSearchViewController: BaseViewController, StoryboardView, StoryboardBased {
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var linkButton: UIButton!

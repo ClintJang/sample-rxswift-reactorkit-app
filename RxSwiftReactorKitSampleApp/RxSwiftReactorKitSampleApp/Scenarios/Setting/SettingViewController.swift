@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import Reusable
 
-class SettingViewController: BaseViewController, StoryboardView {
+class SettingViewController: BaseViewController, StoryboardView, StoryboardBased {
 
     override func viewDidLoad() {
         super.viewDidLoad()

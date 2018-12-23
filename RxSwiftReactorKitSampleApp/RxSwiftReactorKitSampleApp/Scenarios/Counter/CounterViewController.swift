@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import Reusable
 
-class CounterViewController: UIViewController {
+class CounterViewController: UIViewController, StoryboardBased {
 
     override func viewDidLoad() {
         super.viewDidLoad()
