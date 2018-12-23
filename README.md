@@ -3,11 +3,14 @@
 
 ## 상세 설명 (Description)
 `RxSwift` 기반에 `ReactorKit` 아키텍쳐 라이브러리를 활용하여, `iOS Sample App`을 만들어보려합니다.
+
 - RxFlowDemo 소스를 많이 활용하여 이동처리 셈플 부분을 작성할 예정입니다. (적용 중)
 - RxReactorKit Examples 소스를 활용하여 화면 구성을 할 예정입니다. (적용 중)
     - [Counter](https://github.com/ReactorKit/ReactorKit/tree/master/Examples/Counter)
     - [GitHubSearch](https://github.com/ReactorKit/ReactorKit/tree/master/Examples/GitHubSearch)
 - 나머지 화면은 라이센스 사용 목록을 보여주는 정도로 할 예정입니다.
+- [GitHubSearch](https://github.com/ReactorKit/ReactorKit/tree/master/Examples/GitHubSearch) 에서 네트워크 처리한 부분은 [Drrrible](https://github.com/devxoul/Drrrible) 에서 네트워크 처리한 부분(Moya, MoyaSugar)을 참고한 방식으로 변경할 예정입니다.
+    - MoyaSugar가 4.2 대응이 되어있지 않아 포크떠서 수정한 링크를 사용할 것입니다. Moya의 Rx 활용을 보여주는 부분이라 Moya를 처음 사용한다면, MoyaSugar를 참고 하면 좋으실 것이라 생각됩니다.
 
 ## 아키텍쳐 컨셉 (Architecture Concepts)
 - [Reactive eXtensions(RX)](http://reactivex.io/) 

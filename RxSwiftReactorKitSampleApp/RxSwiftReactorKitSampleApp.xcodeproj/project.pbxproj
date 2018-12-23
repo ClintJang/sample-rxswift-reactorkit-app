@@ -14,7 +14,7 @@
 		BC18740E21B4C3CF00AD3A01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC18740C21B4C3CF00AD3A01 /* LaunchScreen.storyboard */; };
 		BC18742321B4FC0700AD3A01 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC18742221B4FC0700AD3A01 /* MainViewController.swift */; };
 		BC18742521B4FC3900AD3A01 /* MainViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC18742421B4FC3900AD3A01 /* MainViewReactor.swift */; };
-		BC18742B21B50A7500AD3A01 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC18742A21B50A7500AD3A01 /* Setting.storyboard */; };
+		BC18742B21B50A7500AD3A01 /* SettingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC18742A21B50A7500AD3A01 /* SettingViewController.storyboard */; };
 		BC18742D21B50A8400AD3A01 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC18742C21B50A8400AD3A01 /* SettingViewController.swift */; };
 		BC18742F21B50A9600AD3A01 /* SettingViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC18742E21B50A9600AD3A01 /* SettingViewReactor.swift */; };
 		BC18743321B515A500AD3A01 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = BC18743221B515A500AD3A01 /* README.md */; };
@@ -24,7 +24,6 @@
 		BC18744C21B6445900AD3A01 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = BC18744B21B6445800AD3A01 /* .swiftlint.yml */; };
 		BC18744E21B64A1300AD3A01 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC18744D21B64A1300AD3A01 /* BaseViewController.swift */; };
 		BC18745021B66F9A00AD3A01 /* Start.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC18744F21B66F9A00AD3A01 /* Start.storyboard */; };
-		BC18745321B67C7900AD3A01 /* GitHubSearch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC18745221B67C7900AD3A01 /* GitHubSearch.storyboard */; };
 		BC18745521B67CAE00AD3A01 /* GitHubSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC18745421B67CAE00AD3A01 /* GitHubSearchViewController.swift */; };
 		BC18745721B67CE100AD3A01 /* GitHubSearchViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC18745621B67CE100AD3A01 /* GitHubSearchViewReactor.swift */; };
 		BC18751921C06B7700AD3A01 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC18751821C06B7700AD3A01 /* Networking.swift */; };
@@ -34,6 +33,11 @@
 		BC788CB021CFE43B00B9AB63 /* DashboardFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC788CAF21CFE43B00B9AB63 /* DashboardFlow.swift */; };
 		BC788CB321CFE94C00B9AB63 /* CounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC788CB221CFE94C00B9AB63 /* CounterViewController.swift */; };
 		BC788CB521CFE96D00B9AB63 /* CounterViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC788CB421CFE96D00B9AB63 /* CounterViewReactor.swift */; };
+		BC788CB721CFEA8200B9AB63 /* CounterViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC788CB621CFEA8200B9AB63 /* CounterViewController.storyboard */; };
+		BC788CB921CFEB0B00B9AB63 /* GitHubSearchViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC788CB821CFEB0B00B9AB63 /* GitHubSearchViewController.storyboard */; };
+		BC788CBB21CFEB9D00B9AB63 /* CounterFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC788CBA21CFEB9D00B9AB63 /* CounterFlow.swift */; };
+		BC788CBD21CFEBAD00B9AB63 /* GitHubSearchFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC788CBC21CFEBAD00B9AB63 /* GitHubSearchFlow.swift */; };
+		BC788CBF21CFEBB900B9AB63 /* SettingFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC788CBE21CFEBB900B9AB63 /* SettingFlow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,7 +53,7 @@
 		BC18742221B4FC0700AD3A01 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		BC18742421B4FC3900AD3A01 /* MainViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewReactor.swift; sourceTree = "<group>"; };
 		BC18742621B502DE00AD3A01 /* RxSwiftReactorKitSampleApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RxSwiftReactorKitSampleApp-Bridging-Header.h"; sourceTree = "<group>"; };
-		BC18742A21B50A7500AD3A01 /* Setting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
+		BC18742A21B50A7500AD3A01 /* SettingViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingViewController.storyboard; sourceTree = "<group>"; };
 		BC18742C21B50A8400AD3A01 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		BC18742E21B50A9600AD3A01 /* SettingViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewReactor.swift; sourceTree = "<group>"; };
 		BC18743221B515A500AD3A01 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -60,7 +64,6 @@
 		BC18744B21B6445800AD3A01 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
 		BC18744D21B64A1300AD3A01 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		BC18744F21B66F9A00AD3A01 /* Start.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Start.storyboard; sourceTree = "<group>"; };
-		BC18745221B67C7900AD3A01 /* GitHubSearch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GitHubSearch.storyboard; sourceTree = "<group>"; };
 		BC18745421B67CAE00AD3A01 /* GitHubSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubSearchViewController.swift; sourceTree = "<group>"; };
 		BC18745621B67CE100AD3A01 /* GitHubSearchViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubSearchViewReactor.swift; sourceTree = "<group>"; };
 		BC18751821C06B7700AD3A01 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
@@ -70,6 +73,11 @@
 		BC788CAF21CFE43B00B9AB63 /* DashboardFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardFlow.swift; sourceTree = "<group>"; };
 		BC788CB221CFE94C00B9AB63 /* CounterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewController.swift; sourceTree = "<group>"; };
 		BC788CB421CFE96D00B9AB63 /* CounterViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewReactor.swift; sourceTree = "<group>"; };
+		BC788CB621CFEA8200B9AB63 /* CounterViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CounterViewController.storyboard; sourceTree = "<group>"; };
+		BC788CB821CFEB0B00B9AB63 /* GitHubSearchViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GitHubSearchViewController.storyboard; sourceTree = "<group>"; };
+		BC788CBA21CFEB9D00B9AB63 /* CounterFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterFlow.swift; sourceTree = "<group>"; };
+		BC788CBC21CFEBAD00B9AB63 /* GitHubSearchFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubSearchFlow.swift; sourceTree = "<group>"; };
+		BC788CBE21CFEBB900B9AB63 /* SettingFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingFlow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -229,7 +237,7 @@
 		BC18742921B50A5500AD3A01 /* Setting */ = {
 			isa = PBXGroup;
 			children = (
-				BC18742A21B50A7500AD3A01 /* Setting.storyboard */,
+				BC18742A21B50A7500AD3A01 /* SettingViewController.storyboard */,
 				BC18742C21B50A8400AD3A01 /* SettingViewController.swift */,
 				BC18742E21B50A9600AD3A01 /* SettingViewReactor.swift */,
 			);
@@ -264,7 +272,7 @@
 		BC18745121B67C3100AD3A01 /* GitHubSearch */ = {
 			isa = PBXGroup;
 			children = (
-				BC18745221B67C7900AD3A01 /* GitHubSearch.storyboard */,
+				BC788CB821CFEB0B00B9AB63 /* GitHubSearchViewController.storyboard */,
 				BC18745421B67CAE00AD3A01 /* GitHubSearchViewController.swift */,
 				BC18745621B67CE100AD3A01 /* GitHubSearchViewReactor.swift */,
 			);
@@ -277,6 +285,9 @@
 				BC6B989621C9498B000FDD98 /* SampleStep.swift */,
 				BC6B989821C94A18000FDD98 /* AppFlow.swift */,
 				BC788CAF21CFE43B00B9AB63 /* DashboardFlow.swift */,
+				BC788CBA21CFEB9D00B9AB63 /* CounterFlow.swift */,
+				BC788CBC21CFEBAD00B9AB63 /* GitHubSearchFlow.swift */,
+				BC788CBE21CFEBB900B9AB63 /* SettingFlow.swift */,
 			);
 			path = Flows;
 			sourceTree = "<group>";
@@ -294,6 +305,7 @@
 			children = (
 				BC788CB221CFE94C00B9AB63 /* CounterViewController.swift */,
 				BC788CB421CFE96D00B9AB63 /* CounterViewReactor.swift */,
+				BC788CB621CFEA8200B9AB63 /* CounterViewController.storyboard */,
 			);
 			path = Counter;
 			sourceTree = "<group>";
@@ -368,9 +380,10 @@
 				BC18744C21B6445900AD3A01 /* .swiftlint.yml in Resources */,
 				BC18743321B515A500AD3A01 /* README.md in Resources */,
 				BC18745021B66F9A00AD3A01 /* Start.storyboard in Resources */,
-				BC18742B21B50A7500AD3A01 /* Setting.storyboard in Resources */,
+				BC18742B21B50A7500AD3A01 /* SettingViewController.storyboard in Resources */,
 				BC18740921B4C3CF00AD3A01 /* Main.storyboard in Resources */,
-				BC18745321B67C7900AD3A01 /* GitHubSearch.storyboard in Resources */,
+				BC788CB721CFEA8200B9AB63 /* CounterViewController.storyboard in Resources */,
+				BC788CB921CFEB0B00B9AB63 /* GitHubSearchViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,6 +507,8 @@
 			files = (
 				BC6B989921C94A18000FDD98 /* AppFlow.swift in Sources */,
 				BC788CB521CFE96D00B9AB63 /* CounterViewReactor.swift in Sources */,
+				BC788CBD21CFEBAD00B9AB63 /* GitHubSearchFlow.swift in Sources */,
+				BC788CBB21CFEB9D00B9AB63 /* CounterFlow.swift in Sources */,
 				BC18745521B67CAE00AD3A01 /* GitHubSearchViewController.swift in Sources */,
 				BC6B989C21C95162000FDD98 /* PreferencesService.swift in Sources */,
 				BC18742F21B50A9600AD3A01 /* SettingViewReactor.swift in Sources */,
@@ -508,6 +523,7 @@
 				BC788CB021CFE43B00B9AB63 /* DashboardFlow.swift in Sources */,
 				BC18740421B4C3CF00AD3A01 /* AppDelegate.swift in Sources */,
 				BC18745721B67CE100AD3A01 /* GitHubSearchViewReactor.swift in Sources */,
+				BC788CBF21CFEBB900B9AB63 /* SettingFlow.swift in Sources */,
 				BC18742D21B50A8400AD3A01 /* SettingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

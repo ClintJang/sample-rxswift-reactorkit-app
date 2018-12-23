@@ -10,4 +10,11 @@ enum SampleStep: Step {
     case onboarding
 
     case dashboard
+
+    case counter
+
+    case gitHubSearch
+
+    case setting
+
 }
