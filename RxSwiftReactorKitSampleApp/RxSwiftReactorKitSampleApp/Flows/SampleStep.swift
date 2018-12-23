@@ -8,5 +8,6 @@
 
 enum SampleStep: Step {
     case onboarding
+
     case dashboard
 }

@@ -14,8 +14,18 @@ protocol HasPreferencesService {
 
 struct UserPreferences {
     private init () {}
+
+    static let onBoarded = "onBoarded"
 }
 
 class PreferencesService {
+    func setOnboarding () {
+        let defaults = UserDefaults.standard
+        defaults.set(true, forKey: UserPreferences.onBoarded)
+    }
 
+    func isOnboarded () -> Bool {
+        let defaults = UserDefaults.standard
+        return defaults.bool(forKey: UserPreferences.onBoarded)
+    }
 }

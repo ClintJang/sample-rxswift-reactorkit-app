@@ -31,6 +31,9 @@
 		BC6B989721C9498B000FDD98 /* SampleStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6B989621C9498B000FDD98 /* SampleStep.swift */; };
 		BC6B989921C94A18000FDD98 /* AppFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6B989821C94A18000FDD98 /* AppFlow.swift */; };
 		BC6B989C21C95162000FDD98 /* PreferencesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6B989B21C95162000FDD98 /* PreferencesService.swift */; };
+		BC788CB021CFE43B00B9AB63 /* DashboardFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC788CAF21CFE43B00B9AB63 /* DashboardFlow.swift */; };
+		BC788CB321CFE94C00B9AB63 /* CounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC788CB221CFE94C00B9AB63 /* CounterViewController.swift */; };
+		BC788CB521CFE96D00B9AB63 /* CounterViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC788CB421CFE96D00B9AB63 /* CounterViewReactor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +67,9 @@
 		BC6B989621C9498B000FDD98 /* SampleStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleStep.swift; sourceTree = "<group>"; };
 		BC6B989821C94A18000FDD98 /* AppFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlow.swift; sourceTree = "<group>"; };
 		BC6B989B21C95162000FDD98 /* PreferencesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesService.swift; sourceTree = "<group>"; };
+		BC788CAF21CFE43B00B9AB63 /* DashboardFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardFlow.swift; sourceTree = "<group>"; };
+		BC788CB221CFE94C00B9AB63 /* CounterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewController.swift; sourceTree = "<group>"; };
+		BC788CB421CFE96D00B9AB63 /* CounterViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewReactor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +172,7 @@
 		BC18741A21B4F78400AD3A01 /* Scenarios */ = {
 			isa = PBXGroup;
 			children = (
+				BC788CB121CFE72300B9AB63 /* Counter */,
 				BC18742121B4FBE100AD3A01 /* Main */,
 				BC18745121B67C3100AD3A01 /* GitHubSearch */,
 				BC18742921B50A5500AD3A01 /* Setting */,
@@ -269,6 +276,7 @@
 			children = (
 				BC6B989621C9498B000FDD98 /* SampleStep.swift */,
 				BC6B989821C94A18000FDD98 /* AppFlow.swift */,
+				BC788CAF21CFE43B00B9AB63 /* DashboardFlow.swift */,
 			);
 			path = Flows;
 			sourceTree = "<group>";
@@ -279,6 +287,15 @@
 				BC6B989B21C95162000FDD98 /* PreferencesService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		BC788CB121CFE72300B9AB63 /* Counter */ = {
+			isa = PBXGroup;
+			children = (
+				BC788CB221CFE94C00B9AB63 /* CounterViewController.swift */,
+				BC788CB421CFE96D00B9AB63 /* CounterViewReactor.swift */,
+			);
+			path = Counter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -476,16 +493,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC6B989921C94A18000FDD98 /* AppFlow.swift in Sources */,
+				BC788CB521CFE96D00B9AB63 /* CounterViewReactor.swift in Sources */,
 				BC18745521B67CAE00AD3A01 /* GitHubSearchViewController.swift in Sources */,
 				BC6B989C21C95162000FDD98 /* PreferencesService.swift in Sources */,
 				BC18742F21B50A9600AD3A01 /* SettingViewReactor.swift in Sources */,
 				BC18744421B6056F00AD3A01 /* Localized.swift in Sources */,
+				BC788CB321CFE94C00B9AB63 /* CounterViewController.swift in Sources */,
 				BC18742521B4FC3900AD3A01 /* MainViewReactor.swift in Sources */,
 				BC18742321B4FC0700AD3A01 /* MainViewController.swift in Sources */,
 				BC6B989721C9498B000FDD98 /* SampleStep.swift in Sources */,
 				BC18751921C06B7700AD3A01 /* Networking.swift in Sources */,
 				BC18744621B608FC00AD3A01 /* Constants.swift in Sources */,
 				BC18744E21B64A1300AD3A01 /* BaseViewController.swift in Sources */,
+				BC788CB021CFE43B00B9AB63 /* DashboardFlow.swift in Sources */,
 				BC18740421B4C3CF00AD3A01 /* AppDelegate.swift in Sources */,
 				BC18745721B67CE100AD3A01 /* GitHubSearchViewReactor.swift in Sources */,
 				BC18742D21B50A8400AD3A01 /* SettingViewController.swift in Sources */,

@@ -15,17 +15,20 @@ enabled_rules:
   - colon
   - comma
   - control_statement
-disabled_rules: # rule identifiers to exclude from running
   - anyobject_protocol
   - array_init
   - attributes
   - closure_end_indentation
-#  - closure_spacing
-  - collection_alignment
   - contains_over_first_not_nil
   - empty_count
   - empty_string
   - empty_xctest_method
+disabled_rules: # rule identifiers to exclude from running
+  - anyobject_protocol
+  - array_init
+  - closure_end_indentation
+#  - closure_spacing
+  - collection_alignment
   - explicit_init
   - extension_access_modifier
   - fallthrough

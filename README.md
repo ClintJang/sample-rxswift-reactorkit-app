@@ -3,6 +3,11 @@
 
 ## 상세 설명 (Description)
 `RxSwift` 기반에 `ReactorKit` 아키텍쳐 라이브러리를 활용하여, `iOS Sample App`을 만들어보려합니다.
+- RxFlowDemo 소스를 많이 활용하여 이동처리 셈플 부분을 작성할 예정입니다. (적용 중)
+- RxReactorKit Examples 소스를 활용하여 화면 구성을 할 예정입니다. (적용 중)
+    - [Counter](https://github.com/ReactorKit/ReactorKit/tree/master/Examples/Counter)
+    - [GitHubSearch](https://github.com/ReactorKit/ReactorKit/tree/master/Examples/GitHubSearch)
+- 나머지 화면은 라이센스 사용 목록을 보여주는 정도로 할 예정입니다.
 
 ## 아키텍쳐 컨셉 (Architecture Concepts)
 - [Reactive eXtensions(RX)](http://reactivex.io/) 

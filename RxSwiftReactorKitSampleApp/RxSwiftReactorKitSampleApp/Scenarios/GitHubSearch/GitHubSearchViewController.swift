@@ -38,9 +38,9 @@ class GitHubSearchViewController: BaseViewController, StoryboardView {
 
         tableView.rx.contentOffset
             .filter { [weak self] offset in
-                guard let strongSelf = self else { return false }
-                guard strongSelf.tableView.frame.height > 0 else { return false }
-                return offset.y + strongSelf.tableView.frame.height >= strongSelf.tableView.contentSize.height - 100
+                guard let self = self else { return false }
+                guard self.tableView.frame.height > 0 else { return false }
+                return offset.y + self.tableView.frame.height >= self.tableView.contentSize.height - 100
             }
             .map { _ in Reactor.Action.loadNextPage }
             .bind(to: reactor.action)
@@ -56,22 +56,22 @@ class GitHubSearchViewController: BaseViewController, StoryboardView {
         // View
         tableView.rx.itemSelected
             .subscribe(onNext: { [weak self, weak reactor] indexPath in
-                guard let strongSelf = self else { return }
-                strongSelf.view.endEditing(true)
-                strongSelf.tableView.deselectRow(at: indexPath, animated: false)
+                guard let self = self else { return }
+                self.view.endEditing(true)
+                self.tableView.deselectRow(at: indexPath, animated: false)
                 guard let repo = reactor?.currentState.repos[indexPath.row] else { return }
                 guard let url = URL(string: "https://github.com/\(repo)") else { return }
                 let viewController = SFSafariViewController(url: url)
-                strongSelf.searchController.present(viewController, animated: true, completion: nil)
+                self.searchController.present(viewController, animated: true, completion: nil)
             })
             .disposed(by: disposeBag)
 
         linkButton.rx.tap
             .subscribe(onNext: { [weak self] in
-                guard let strongSelf = self else { return }
+                guard let self = self else { return }
                 guard let url = URL(string: "https://github.com/ReactorKit/ReactorKit/blob/master/Examples/GitHubSearch/README.md") else { return }
                 let viewController = SFSafariViewController(url: url)
-                strongSelf.present(viewController, animated: true, completion: nil)
+                self.present(viewController, animated: true, completion: nil)
             })
             .disposed(by: disposeBag)
     }

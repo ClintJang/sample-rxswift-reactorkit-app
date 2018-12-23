@@ -31,7 +31,7 @@ class AppFlow: Flow {
 
         switch step {
         case .onboarding, .dashboard:
-            fallthrough
+            return NextFlowItems.none
         default:
             return NextFlowItems.none
         }
@@ -41,6 +41,10 @@ class AppFlow: Flow {
 
 class AppStepper: Stepper {
     init(withServices services: AppServices) {
-        self.step.accept(SampleStep.onboarding)
+        if services.preferencesService.isOnboarded() {
+            self.step.accept(SampleStep.dashboard)
+        } else {
+            self.step.accept(SampleStep.onboarding)
+        }
     }
 }
