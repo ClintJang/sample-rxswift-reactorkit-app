@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CounterFlow: Flow {
+final class CounterFlow: Flow {
     var root: Presentable {
         return self.rootViewController
     }

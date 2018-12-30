@@ -8,7 +8,7 @@
 
 import Foundation
 
-class SettingFlow: Flow {
+final class SettingFlow: Flow {
     var root: Presentable {
         return self.rootViewController
     }

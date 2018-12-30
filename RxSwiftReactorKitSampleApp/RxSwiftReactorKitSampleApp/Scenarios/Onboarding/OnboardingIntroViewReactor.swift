@@ -1,11 +1,9 @@
 //
-//  Constants.swift
+//  OnboardingIntroViewReactor.swift
 //  RxSwiftReactorKitSampleApp
 //
-//  Created by Clint on 04/12/2018.
+//  Created by Clint on 30/12/2018.
 //  Copyright © 2018 clintjang. All rights reserved.
 //
 
-enum Constants {
-
-}
+import Foundation

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class GitHubSearchFlow: Flow {
+final class GitHubSearchFlow: Flow {
     var root: Presentable {
         return self.rootViewController
     }

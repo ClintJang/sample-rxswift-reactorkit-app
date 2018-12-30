@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AppFlow: Flow {
+final class AppFlow: Flow {
 
     var root: Presentable {
         return self.rootWindow

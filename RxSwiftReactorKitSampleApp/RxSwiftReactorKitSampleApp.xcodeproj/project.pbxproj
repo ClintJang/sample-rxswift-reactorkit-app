@@ -27,6 +27,10 @@
 		BC18745521B67CAE00AD3A01 /* GitHubSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC18745421B67CAE00AD3A01 /* GitHubSearchViewController.swift */; };
 		BC18745721B67CE100AD3A01 /* GitHubSearchViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC18745621B67CE100AD3A01 /* GitHubSearchViewReactor.swift */; };
 		BC18751921C06B7700AD3A01 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC18751821C06B7700AD3A01 /* Networking.swift */; };
+		BC1F056D21D8CD1F00666A0B /* OnboardingFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1F056C21D8CD1F00666A0B /* OnboardingFlow.swift */; };
+		BC1F057021D8CE0F00666A0B /* OnboardingIntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1F056F21D8CE0F00666A0B /* OnboardingIntroViewController.swift */; };
+		BC1F057221D8CE1B00666A0B /* OnboardingIntroViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC1F057121D8CE1B00666A0B /* OnboardingIntroViewController.storyboard */; };
+		BC1F057421D8CF2600666A0B /* OnboardingIntroViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1F057321D8CF2600666A0B /* OnboardingIntroViewReactor.swift */; };
 		BC6B989721C9498B000FDD98 /* SampleStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6B989621C9498B000FDD98 /* SampleStep.swift */; };
 		BC6B989921C94A18000FDD98 /* AppFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6B989821C94A18000FDD98 /* AppFlow.swift */; };
 		BC6B989C21C95162000FDD98 /* PreferencesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6B989B21C95162000FDD98 /* PreferencesService.swift */; };
@@ -67,6 +71,10 @@
 		BC18745421B67CAE00AD3A01 /* GitHubSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubSearchViewController.swift; sourceTree = "<group>"; };
 		BC18745621B67CE100AD3A01 /* GitHubSearchViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubSearchViewReactor.swift; sourceTree = "<group>"; };
 		BC18751821C06B7700AD3A01 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		BC1F056C21D8CD1F00666A0B /* OnboardingFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingFlow.swift; sourceTree = "<group>"; };
+		BC1F056F21D8CE0F00666A0B /* OnboardingIntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingIntroViewController.swift; sourceTree = "<group>"; };
+		BC1F057121D8CE1B00666A0B /* OnboardingIntroViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnboardingIntroViewController.storyboard; sourceTree = "<group>"; };
+		BC1F057321D8CF2600666A0B /* OnboardingIntroViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingIntroViewReactor.swift; sourceTree = "<group>"; };
 		BC6B989621C9498B000FDD98 /* SampleStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleStep.swift; sourceTree = "<group>"; };
 		BC6B989821C94A18000FDD98 /* AppFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlow.swift; sourceTree = "<group>"; };
 		BC6B989B21C95162000FDD98 /* PreferencesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesService.swift; sourceTree = "<group>"; };
@@ -180,6 +188,7 @@
 		BC18741A21B4F78400AD3A01 /* Scenarios */ = {
 			isa = PBXGroup;
 			children = (
+				BC1F056E21D8CDCC00666A0B /* Onboarding */,
 				BC788CB121CFE72300B9AB63 /* Counter */,
 				BC18742121B4FBE100AD3A01 /* Main */,
 				BC18745121B67C3100AD3A01 /* GitHubSearch */,
@@ -279,11 +288,22 @@
 			path = GitHubSearch;
 			sourceTree = "<group>";
 		};
+		BC1F056E21D8CDCC00666A0B /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				BC1F057121D8CE1B00666A0B /* OnboardingIntroViewController.storyboard */,
+				BC1F056F21D8CE0F00666A0B /* OnboardingIntroViewController.swift */,
+				BC1F057321D8CF2600666A0B /* OnboardingIntroViewReactor.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
 		BC6B989521C94964000FDD98 /* Flows */ = {
 			isa = PBXGroup;
 			children = (
 				BC6B989621C9498B000FDD98 /* SampleStep.swift */,
 				BC6B989821C94A18000FDD98 /* AppFlow.swift */,
+				BC1F056C21D8CD1F00666A0B /* OnboardingFlow.swift */,
 				BC788CAF21CFE43B00B9AB63 /* DashboardFlow.swift */,
 				BC788CBA21CFEB9D00B9AB63 /* CounterFlow.swift */,
 				BC788CBC21CFEBAD00B9AB63 /* GitHubSearchFlow.swift */,
@@ -303,9 +323,9 @@
 		BC788CB121CFE72300B9AB63 /* Counter */ = {
 			isa = PBXGroup;
 			children = (
+				BC788CB621CFEA8200B9AB63 /* CounterViewController.storyboard */,
 				BC788CB221CFE94C00B9AB63 /* CounterViewController.swift */,
 				BC788CB421CFE96D00B9AB63 /* CounterViewReactor.swift */,
-				BC788CB621CFEA8200B9AB63 /* CounterViewController.storyboard */,
 			);
 			path = Counter;
 			sourceTree = "<group>";
@@ -380,6 +400,7 @@
 				BC18744C21B6445900AD3A01 /* .swiftlint.yml in Resources */,
 				BC18743321B515A500AD3A01 /* README.md in Resources */,
 				BC18745021B66F9A00AD3A01 /* Start.storyboard in Resources */,
+				BC1F057221D8CE1B00666A0B /* OnboardingIntroViewController.storyboard in Resources */,
 				BC18742B21B50A7500AD3A01 /* SettingViewController.storyboard in Resources */,
 				BC18740921B4C3CF00AD3A01 /* Main.storyboard in Resources */,
 				BC788CB721CFEA8200B9AB63 /* CounterViewController.storyboard in Resources */,
@@ -518,8 +539,11 @@
 				BC18742321B4FC0700AD3A01 /* MainViewController.swift in Sources */,
 				BC6B989721C9498B000FDD98 /* SampleStep.swift in Sources */,
 				BC18751921C06B7700AD3A01 /* Networking.swift in Sources */,
+				BC1F057421D8CF2600666A0B /* OnboardingIntroViewReactor.swift in Sources */,
 				BC18744621B608FC00AD3A01 /* Constants.swift in Sources */,
+				BC1F057021D8CE0F00666A0B /* OnboardingIntroViewController.swift in Sources */,
 				BC18744E21B64A1300AD3A01 /* BaseViewController.swift in Sources */,
+				BC1F056D21D8CD1F00666A0B /* OnboardingFlow.swift in Sources */,
 				BC788CB021CFE43B00B9AB63 /* DashboardFlow.swift in Sources */,
 				BC18740421B4C3CF00AD3A01 /* AppDelegate.swift in Sources */,
 				BC18745721B67CE100AD3A01 /* GitHubSearchViewReactor.swift in Sources */,

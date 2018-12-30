@@ -8,7 +8,7 @@
 
 import Foundation
 
-class DashboardFlow: Flow {
+final class DashboardFlow: Flow {
     var root: Presentable {
         return self.rootViewController
     }
