@@ -18,20 +18,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="다음엔 탭바로 이동하게 .. 작업중" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yFc-6F-V7c">
-                                <rect key="frame" x="78.5" y="323.5" width="218.5" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yFc-6F-V7c">
+                                <rect key="frame" x="34.5" y="212.5" width="306.5" height="142.5"/>
+                                <string key="text">소개 화면입니다.
+
+한번 확인 버튼 이후에 다시 실행하면 
+해당 화면이 나타나지 않도록 하였습니다.
+
+RxFlow 화면 이동 처리 샘플 적용화면 입니다.
+</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="es0-qA-vbB">
+                                <rect key="frame" x="112.5" y="577" width="150" height="40"/>
+                                <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="3bQ-2b-4VK"/>
+                                    <constraint firstAttribute="width" constant="150" id="ql7-mu-a8r"/>
+                                </constraints>
+                                <state key="normal" title="메인화면으로 전환하기"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="zt4-55-8no" firstAttribute="bottom" secondItem="es0-qA-vbB" secondAttribute="bottom" constant="50" id="368-ha-3hq"/>
                             <constraint firstItem="yFc-6F-V7c" firstAttribute="centerX" secondItem="EWE-x3-zJE" secondAttribute="centerX" id="S5s-JY-6Mh"/>
-                            <constraint firstItem="yFc-6F-V7c" firstAttribute="centerY" secondItem="EWE-x3-zJE" secondAttribute="centerY" id="VhP-TL-GbR"/>
+                            <constraint firstItem="yFc-6F-V7c" firstAttribute="centerY" secondItem="EWE-x3-zJE" secondAttribute="centerY" constant="-50" id="VhP-TL-GbR"/>
+                            <constraint firstItem="es0-qA-vbB" firstAttribute="centerX" secondItem="EWE-x3-zJE" secondAttribute="centerX" id="YqJ-jq-ok1"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="zt4-55-8no"/>
                     </view>
+                    <connections>
+                        <outlet property="completeButton" destination="es0-qA-vbB" id="mbN-h3-lQP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Riw-H7-6lw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

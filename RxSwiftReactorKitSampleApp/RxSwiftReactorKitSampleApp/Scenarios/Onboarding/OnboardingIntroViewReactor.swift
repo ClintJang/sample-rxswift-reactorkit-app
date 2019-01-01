@@ -8,15 +8,35 @@
 
 import Foundation
 
-final class OnboardingViewReactor: Reactor {
+final class OnboardingIntroViewReactor: Reactor {
 
     enum Action {
-        case temp
+        case introIsComplete
+    }
+
+    enum Mutation {
+        case moveDashboard
     }
 
     struct State {
-        var isTemp: Bool = false
+        var step: Step = SampleStep.intro
     }
 
     let initialState = State()
+
+    func mutate(action: OnboardingIntroViewReactor.Action) -> Observable<OnboardingIntroViewReactor.Mutation> {
+        switch action {
+        case .introIsComplete:
+            return Observable.just(Mutation.moveDashboard)
+        }
+    }
+
+    func reduce(state: OnboardingIntroViewReactor.State, mutation: OnboardingIntroViewReactor.Mutation) -> OnboardingIntroViewReactor.State {
+        var state = state
+        switch mutation {
+        case .moveDashboard:
+            state.step = SampleStep.introIsComplete
+            return state
+        }
+    }
 }

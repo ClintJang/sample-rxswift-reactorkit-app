@@ -42,7 +42,7 @@ final class OnboardingFlow: Flow {
 
     private func navigationToOnboardingIntroScreen() -> NextFlowItems {
         let onboardingIntroViewController = OnboardingIntroViewController.instantiate()
-        onboardingIntroViewController.title = "Intro"
+        onboardingIntroViewController.title = "앱 소개"
         self.rootViewController.pushViewController(onboardingIntroViewController, animated: false)
 
         return .one(flowItem: NextFlowItem(nextPresentable: onboardingIntroViewController,
