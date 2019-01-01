@@ -30,13 +30,29 @@ final class AppFlow: Flow {
         guard let step = step as? SampleStep else { return NextFlowItems.none }
 
         switch step {
-        case .onboarding, .dashboard:
+        case .onboarding:
+            return navigationToOnboardingScreen()
+        case .dashboard:
             return NextFlowItems.none
         default:
             return NextFlowItems.none
         }
     }
 
+    private func navigationToOnboardingScreen() -> NextFlowItems {
+
+        if let rootViewController = self.rootWindow.rootViewController {
+            rootViewController.dismiss(animated: false)
+        }
+
+        let onboardingFlow = OnboardingFlow(withServices: self.services)
+        Flows.whenReady(flow1: onboardingFlow) { [unowned self] (root) in
+            self.rootWindow.rootViewController = root
+        }
+
+        return .one(flowItem: NextFlowItem(nextPresentable: onboardingFlow,
+                                           nextStepper: OneStepper(withSingleStep: SampleStep.intro)))
+    }
 }
 
 class AppStepper: Stepper {

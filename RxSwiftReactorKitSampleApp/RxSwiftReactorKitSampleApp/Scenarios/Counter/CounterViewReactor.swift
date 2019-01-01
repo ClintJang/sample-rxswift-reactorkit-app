@@ -8,7 +8,7 @@
 
 import Foundation
 
-final class ReactorViewReactor: Reactor {
+final class CounterViewReactor: Reactor {
 
     enum Action {
         case temp

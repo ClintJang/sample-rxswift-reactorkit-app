@@ -8,7 +8,7 @@
 
 import Foundation
 
-final class Onboarding: Flow {
+final class OnboardingFlow: Flow {
     var root: Presentable {
         return self.rootViewController
     }

@@ -7,3 +7,16 @@
 //
 
 import Foundation
+
+final class OnboardingViewReactor: Reactor {
+
+    enum Action {
+        case temp
+    }
+
+    struct State {
+        var isTemp: Bool = false
+    }
+
+    let initialState = State()
+}
