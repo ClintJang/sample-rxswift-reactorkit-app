@@ -9,11 +9,8 @@
 /* Begin PBXBuildFile section */
 		77B094B65B203E952A819380 /* Pods_RxSwiftReactorKitSampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5370CD8DFFAED3638126AC95 /* Pods_RxSwiftReactorKitSampleApp.framework */; };
 		BC18740421B4C3CF00AD3A01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC18740321B4C3CF00AD3A01 /* AppDelegate.swift */; };
-		BC18740921B4C3CF00AD3A01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC18740721B4C3CF00AD3A01 /* Main.storyboard */; };
 		BC18740B21B4C3CF00AD3A01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC18740A21B4C3CF00AD3A01 /* Assets.xcassets */; };
 		BC18740E21B4C3CF00AD3A01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC18740C21B4C3CF00AD3A01 /* LaunchScreen.storyboard */; };
-		BC18742321B4FC0700AD3A01 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC18742221B4FC0700AD3A01 /* MainViewController.swift */; };
-		BC18742521B4FC3900AD3A01 /* MainViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC18742421B4FC3900AD3A01 /* MainViewReactor.swift */; };
 		BC18742B21B50A7500AD3A01 /* SettingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC18742A21B50A7500AD3A01 /* SettingViewController.storyboard */; };
 		BC18742D21B50A8400AD3A01 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC18742C21B50A8400AD3A01 /* SettingViewController.swift */; };
 		BC18742F21B50A9600AD3A01 /* SettingViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC18742E21B50A9600AD3A01 /* SettingViewReactor.swift */; };
@@ -23,7 +20,6 @@
 		BC18744621B608FC00AD3A01 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC18744521B608FC00AD3A01 /* Constants.swift */; };
 		BC18744C21B6445900AD3A01 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = BC18744B21B6445800AD3A01 /* .swiftlint.yml */; };
 		BC18744E21B64A1300AD3A01 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC18744D21B64A1300AD3A01 /* BaseViewController.swift */; };
-		BC18745021B66F9A00AD3A01 /* Start.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC18744F21B66F9A00AD3A01 /* Start.storyboard */; };
 		BC18745521B67CAE00AD3A01 /* GitHubSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC18745421B67CAE00AD3A01 /* GitHubSearchViewController.swift */; };
 		BC18745721B67CE100AD3A01 /* GitHubSearchViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC18745621B67CE100AD3A01 /* GitHubSearchViewReactor.swift */; };
 		BC18751921C06B7700AD3A01 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC18751821C06B7700AD3A01 /* Networking.swift */; };
@@ -50,12 +46,9 @@
 		9BD65D53911B88314410E609 /* Pods-RxSwiftReactorKitSampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftReactorKitSampleApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwiftReactorKitSampleApp/Pods-RxSwiftReactorKitSampleApp.debug.xcconfig"; sourceTree = "<group>"; };
 		BC18740021B4C3CF00AD3A01 /* RxSwiftReactorKitSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftReactorKitSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC18740321B4C3CF00AD3A01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BC18740821B4C3CF00AD3A01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BC18740A21B4C3CF00AD3A01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC18740D21B4C3CF00AD3A01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC18740F21B4C3CF00AD3A01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BC18742221B4FC0700AD3A01 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		BC18742421B4FC3900AD3A01 /* MainViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewReactor.swift; sourceTree = "<group>"; };
 		BC18742621B502DE00AD3A01 /* RxSwiftReactorKitSampleApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RxSwiftReactorKitSampleApp-Bridging-Header.h"; sourceTree = "<group>"; };
 		BC18742A21B50A7500AD3A01 /* SettingViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingViewController.storyboard; sourceTree = "<group>"; };
 		BC18742C21B50A8400AD3A01 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
@@ -67,7 +60,6 @@
 		BC18744521B608FC00AD3A01 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		BC18744B21B6445800AD3A01 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
 		BC18744D21B64A1300AD3A01 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		BC18744F21B66F9A00AD3A01 /* Start.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Start.storyboard; sourceTree = "<group>"; };
 		BC18745421B67CAE00AD3A01 /* GitHubSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubSearchViewController.swift; sourceTree = "<group>"; };
 		BC18745621B67CE100AD3A01 /* GitHubSearchViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubSearchViewReactor.swift; sourceTree = "<group>"; };
 		BC18751821C06B7700AD3A01 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
@@ -150,7 +142,6 @@
 				BC18741E21B4F81B00AD3A01 /* Networking */,
 				BC18741A21B4F78400AD3A01 /* Scenarios */,
 				BC18740321B4C3CF00AD3A01 /* AppDelegate.swift */,
-				BC18744F21B66F9A00AD3A01 /* Start.storyboard */,
 				BC18740A21B4C3CF00AD3A01 /* Assets.xcassets */,
 				BC18740C21B4C3CF00AD3A01 /* LaunchScreen.storyboard */,
 				BC18740F21B4C3CF00AD3A01 /* Info.plist */,
@@ -190,7 +181,6 @@
 			children = (
 				BC1F056E21D8CDCC00666A0B /* Onboarding */,
 				BC788CB121CFE72300B9AB63 /* Counter */,
-				BC18742121B4FBE100AD3A01 /* Main */,
 				BC18745121B67C3100AD3A01 /* GitHubSearch */,
 				BC18742921B50A5500AD3A01 /* Setting */,
 			);
@@ -231,16 +221,6 @@
 			children = (
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		BC18742121B4FBE100AD3A01 /* Main */ = {
-			isa = PBXGroup;
-			children = (
-				BC18740721B4C3CF00AD3A01 /* Main.storyboard */,
-				BC18742221B4FC0700AD3A01 /* MainViewController.swift */,
-				BC18742421B4FC3900AD3A01 /* MainViewReactor.swift */,
-			);
-			path = Main;
 			sourceTree = "<group>";
 		};
 		BC18742921B50A5500AD3A01 /* Setting */ = {
@@ -399,10 +379,8 @@
 				BC18740B21B4C3CF00AD3A01 /* Assets.xcassets in Resources */,
 				BC18744C21B6445900AD3A01 /* .swiftlint.yml in Resources */,
 				BC18743321B515A500AD3A01 /* README.md in Resources */,
-				BC18745021B66F9A00AD3A01 /* Start.storyboard in Resources */,
 				BC1F057221D8CE1B00666A0B /* OnboardingIntroViewController.storyboard in Resources */,
 				BC18742B21B50A7500AD3A01 /* SettingViewController.storyboard in Resources */,
-				BC18740921B4C3CF00AD3A01 /* Main.storyboard in Resources */,
 				BC788CB721CFEA8200B9AB63 /* CounterViewController.storyboard in Resources */,
 				BC788CB921CFEB0B00B9AB63 /* GitHubSearchViewController.storyboard in Resources */,
 			);
@@ -535,8 +513,6 @@
 				BC18742F21B50A9600AD3A01 /* SettingViewReactor.swift in Sources */,
 				BC18744421B6056F00AD3A01 /* Localized.swift in Sources */,
 				BC788CB321CFE94C00B9AB63 /* CounterViewController.swift in Sources */,
-				BC18742521B4FC3900AD3A01 /* MainViewReactor.swift in Sources */,
-				BC18742321B4FC0700AD3A01 /* MainViewController.swift in Sources */,
 				BC6B989721C9498B000FDD98 /* SampleStep.swift in Sources */,
 				BC18751921C06B7700AD3A01 /* Networking.swift in Sources */,
 				BC1F057421D8CF2600666A0B /* OnboardingIntroViewReactor.swift in Sources */,
@@ -555,14 +531,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		BC18740721B4C3CF00AD3A01 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BC18740821B4C3CF00AD3A01 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BC18740C21B4C3CF00AD3A01 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

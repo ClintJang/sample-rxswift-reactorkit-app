@@ -36,6 +36,30 @@ final class DashboardFlow: Flow {
     }
 
     private func navigateToDashboard() -> NextFlowItems {
-        return NextFlowItems.none
-    }
+        let counterFlow = CounterFlow(withServices: self.services)
+        let githubSearchFlow = GitHubSearchFlow(withServices: self.services)
+        let settingFlow = SettingFlow(withServices: self.services)
+
+        Flows.whenReady(flow1: counterFlow, flow2: githubSearchFlow, flow3: settingFlow) { [unowned self] (root1: UINavigationController, root2: UINavigationController, root3: UINavigationController) in
+            let tabBarItem1 = UITabBarItem(title: "Counter", image: nil, selectedImage: nil)
+            let tabBarItem2 = UITabBarItem(title: "Search", image: nil, selectedImage: nil)
+            let tabBarItem3 = UITabBarItem(title: "Setting", image: nil, selectedImage: nil)
+
+            root1.tabBarItem = tabBarItem1
+            root1.title = "Counter"
+            root2.tabBarItem = tabBarItem2
+            root2.title = "GitHub Search"
+            root3.tabBarItem = tabBarItem3
+            root3.title = "Setting"
+
+            self.rootViewController.setViewControllers([root1, root2, root3], animated: false)
+        }
+
+        return .multiple(flowItems: [NextFlowItem(nextPresentable: counterFlow,
+                                                  nextStepper: OneStepper(withSingleStep: SampleStep.counter)),
+                                     NextFlowItem(nextPresentable: githubSearchFlow,
+                                                  nextStepper: OneStepper(withSingleStep: SampleStep.gitHubSearch)),
+                                     NextFlowItem(nextPresentable: settingFlow,
+                                                  nextStepper: OneStepper(withSingleStep: SampleStep.setting))])
+        }
 }

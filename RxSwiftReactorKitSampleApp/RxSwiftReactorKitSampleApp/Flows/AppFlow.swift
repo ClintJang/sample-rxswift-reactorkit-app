@@ -33,7 +33,7 @@ final class AppFlow: Flow {
         case .onboarding:
             return navigationToOnboardingScreen()
         case .onboardingIsComplete, .dashboard:
-            return NextFlowItems.none
+            return navigationToDashboardScreen()
         default:
             return NextFlowItems.none
         }
@@ -52,6 +52,17 @@ final class AppFlow: Flow {
 
         return .one(flowItem: NextFlowItem(nextPresentable: onboardingFlow,
                                            nextStepper: OneStepper(withSingleStep: SampleStep.intro)))
+    }
+
+    private func navigationToDashboardScreen() -> NextFlowItems {
+        let dashboardFlow = DashboardFlow(withServices: self.services)
+
+        Flows.whenReady(flow1: dashboardFlow) { [unowned self] (root) in
+            self.rootWindow.rootViewController = root
+        }
+
+        return .one(flowItem: NextFlowItem(nextPresentable: dashboardFlow,
+                                           nextStepper: OneStepper(withSingleStep: SampleStep.dashboard)))
     }
 }
 
