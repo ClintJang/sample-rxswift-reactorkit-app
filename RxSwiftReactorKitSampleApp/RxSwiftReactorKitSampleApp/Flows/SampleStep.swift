@@ -8,6 +8,8 @@
 
 enum SampleStep: Step {
     case onboarding
+    case onboardingIsComplete
+
     case intro
     case introIsComplete
 

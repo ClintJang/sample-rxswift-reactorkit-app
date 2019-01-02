@@ -35,6 +35,8 @@ final class OnboardingFlow: Flow {
         switch step {
         case .intro:
             return navigationToOnboardingIntroScreen()
+        case .introIsComplete:
+            return .end(withStepForParentFlow: SampleStep.onboardingIsComplete)
         default:
             return .none
         }

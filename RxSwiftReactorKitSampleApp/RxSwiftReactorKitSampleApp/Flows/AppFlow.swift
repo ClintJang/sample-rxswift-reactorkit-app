@@ -32,7 +32,7 @@ final class AppFlow: Flow {
         switch step {
         case .onboarding:
             return navigationToOnboardingScreen()
-        case .dashboard:
+        case .onboardingIsComplete, .dashboard:
             return NextFlowItems.none
         default:
             return NextFlowItems.none
