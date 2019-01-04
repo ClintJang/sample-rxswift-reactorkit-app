@@ -1,6 +1,6 @@
 platform :ios, '10.0'
 
-# 2019-01-04
+# 2019-01-05
 #Downloading dependencies
 #Using Alamofire (4.8.0)
 #Using Differentiator (3.1.0)
@@ -14,6 +14,7 @@ platform :ios, '10.0'
 #Using GoogleAppMeasurement (5.4.0)
 #Using GoogleUtilities (5.3.6)
 #Using Moya (12.0.1)
+#Using MoyaSugar (1.1.0)
 #Using Protobuf (3.6.1)
 #Using ReactorKit (1.2.1)
 #Using Reqres (3.0.0)
@@ -33,6 +34,7 @@ platform :ios, '10.0'
 #Using Starscream (3.0.6)
 #Using SwiftGen (6.0.2)
 #Using SwiftLint (0.29.2)
+#Using Then (2.4.0)
 #Using nanopb (0.3.901)
 #Generating Pods project
 
@@ -66,8 +68,13 @@ end
 def network_pods
     # https://github.com/Moya/Moya
     pod 'Moya'
+    pod 'Moya/RxSwift'
+
+#    pod 'MoyaSugar'
+#    pod 'MoyaSugar/RxSwift'
+
 #    pod 'MoyaSugar'    // swift 4.2 ? error
-    pod 'MoyaSugar', :git => 'https://github.com/ClintJang/MoyaSugar', :branch => 'clintjang/fix/moaysugarprovider-target'
+    pod 'MoyaSugar', :git => 'https://github.com/ClintJang/MoyaSugar', :branch => 'clintjang/1.1.0/fix/moya-sugar-provider-fix'
 
 end
 
@@ -83,6 +90,7 @@ end
 
 def etc_pods
     pod 'Reusable'
+    pod 'Then'
 end
 
 def lint_pods

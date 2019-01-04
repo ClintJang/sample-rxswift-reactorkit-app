@@ -1,15 +1,14 @@
-//
-//  Network.swift
-//  RxSwiftReactorKitSampleApp
-//
-//  Created by Clint on 12/12/2018.
-//  Copyright © 2018 clintjang. All rights reserved.
-//
-
-import Foundation
-import Moya
 import MoyaSugar
 
-public class Networking {
+final class Networking<Target: SugarTargetType>: MoyaSugarProvider<Target> {
+    init(plugins: [PluginType] = []) {
+        let configuration = URLSessionConfiguration.default
+        configuration.httpAdditionalHeaders = Manager.defaultHTTPHeaders
+        configuration.timeoutIntervalForRequest = 10
+
+        let manager = Manager(configuration: configuration)
+        manager.startRequestsImmediately = false
+        super.init(manager: manager, plugins: plugins)
+    }
 
 }

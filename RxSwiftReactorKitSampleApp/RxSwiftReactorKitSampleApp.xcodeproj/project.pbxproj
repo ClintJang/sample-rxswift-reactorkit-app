@@ -27,6 +27,7 @@
 		BC1F057021D8CE0F00666A0B /* OnboardingIntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1F056F21D8CE0F00666A0B /* OnboardingIntroViewController.swift */; };
 		BC1F057221D8CE1B00666A0B /* OnboardingIntroViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC1F057121D8CE1B00666A0B /* OnboardingIntroViewController.storyboard */; };
 		BC1F057421D8CF2600666A0B /* OnboardingIntroViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1F057321D8CF2600666A0B /* OnboardingIntroViewReactor.swift */; };
+		BC1F058021E01C0B00666A0B /* ModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1F057F21E01C0B00666A0B /* ModelType.swift */; };
 		BC6B989721C9498B000FDD98 /* SampleStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6B989621C9498B000FDD98 /* SampleStep.swift */; };
 		BC6B989921C94A18000FDD98 /* AppFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6B989821C94A18000FDD98 /* AppFlow.swift */; };
 		BC6B989C21C95162000FDD98 /* PreferencesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6B989B21C95162000FDD98 /* PreferencesService.swift */; };
@@ -67,6 +68,7 @@
 		BC1F056F21D8CE0F00666A0B /* OnboardingIntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingIntroViewController.swift; sourceTree = "<group>"; };
 		BC1F057121D8CE1B00666A0B /* OnboardingIntroViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnboardingIntroViewController.storyboard; sourceTree = "<group>"; };
 		BC1F057321D8CF2600666A0B /* OnboardingIntroViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingIntroViewReactor.swift; sourceTree = "<group>"; };
+		BC1F057F21E01C0B00666A0B /* ModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelType.swift; sourceTree = "<group>"; };
 		BC6B989621C9498B000FDD98 /* SampleStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleStep.swift; sourceTree = "<group>"; };
 		BC6B989821C94A18000FDD98 /* AppFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlow.swift; sourceTree = "<group>"; };
 		BC6B989B21C95162000FDD98 /* PreferencesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesService.swift; sourceTree = "<group>"; };
@@ -137,8 +139,8 @@
 				BC18741921B4F76700AD3A01 /* Common */,
 				BC18744721B60BC700AD3A01 /* Abstract */,
 				BC6B989521C94964000FDD98 /* Flows */,
-				BC18741F21B4FBBD00AD3A01 /* Models */,
 				BC6B989A21C95148000FDD98 /* Services */,
+				BC1F057E21E01BF700666A0B /* Models */,
 				BC18741E21B4F81B00AD3A01 /* Networking */,
 				BC18741A21B4F78400AD3A01 /* Scenarios */,
 				BC18740321B4C3CF00AD3A01 /* AppDelegate.swift */,
@@ -209,13 +211,6 @@
 			path = Networking;
 			sourceTree = "<group>";
 		};
-		BC18741F21B4FBBD00AD3A01 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
 		BC18742021B4FBD200AD3A01 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -276,6 +271,14 @@
 				BC1F057321D8CF2600666A0B /* OnboardingIntroViewReactor.swift */,
 			);
 			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		BC1F057E21E01BF700666A0B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BC1F057F21E01C0B00666A0B /* ModelType.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		BC6B989521C94964000FDD98 /* Flows */ = {
@@ -419,6 +422,7 @@
 				"${BUILT_PRODUCTS_DIR}/RxViewController/RxViewController.framework",
 				"${BUILT_PRODUCTS_DIR}/SectionReactor/SectionReactor.framework",
 				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
+				"${BUILT_PRODUCTS_DIR}/Then/Then.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -446,6 +450,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxViewController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SectionReactor.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Then.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -515,6 +520,7 @@
 				BC18742F21B50A9600AD3A01 /* SettingViewReactor.swift in Sources */,
 				BC18744421B6056F00AD3A01 /* Localized.swift in Sources */,
 				BC788CB321CFE94C00B9AB63 /* CounterViewController.swift in Sources */,
+				BC1F058021E01C0B00666A0B /* ModelType.swift in Sources */,
 				BC6B989721C9498B000FDD98 /* SampleStep.swift in Sources */,
 				BC18751921C06B7700AD3A01 /* Networking.swift in Sources */,
 				BC1F057421D8CF2600666A0B /* OnboardingIntroViewReactor.swift in Sources */,
