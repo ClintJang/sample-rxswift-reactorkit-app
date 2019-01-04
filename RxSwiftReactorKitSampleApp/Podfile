@@ -67,6 +67,8 @@ def network_pods
     # https://github.com/Moya/Moya
     pod 'Moya'
 #    pod 'MoyaSugar'    // swift 4.2 ? error
+    pod 'MoyaSugar', :git => 'https://github.com/ClintJang/MoyaSugar', :branch => 'clintjang/fix/moaysugarprovider-target'
+
 end
 
 def socket_pods

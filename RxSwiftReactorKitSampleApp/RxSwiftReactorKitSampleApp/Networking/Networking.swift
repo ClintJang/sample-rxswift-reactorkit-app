@@ -8,6 +8,7 @@
 
 import Foundation
 import Moya
+import MoyaSugar
 
 public class Networking {
 
