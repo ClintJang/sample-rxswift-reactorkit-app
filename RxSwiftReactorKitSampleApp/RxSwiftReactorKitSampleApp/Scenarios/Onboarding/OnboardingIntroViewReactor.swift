@@ -8,7 +8,8 @@
 
 import Foundation
 
-final class OnboardingIntroViewReactor: Reactor {
+final class OnboardingIntroViewReactor: Reactor, HasPreferencesService {
+    let preferencesService = PreferencesService()
 
     enum Action {
         case introIsComplete
@@ -27,6 +28,7 @@ final class OnboardingIntroViewReactor: Reactor {
     func mutate(action: OnboardingIntroViewReactor.Action) -> Observable<OnboardingIntroViewReactor.Mutation> {
         switch action {
         case .introIsComplete:
+            preferencesService.setOnboarding()
             return Observable.just(Mutation.moveDashboard)
         }
     }
