@@ -9,10 +9,30 @@
 import UIKit
 import Reusable
 
-class CounterViewController: UIViewController, StoryboardBased {
+class CounterViewController: BaseViewController, StoryboardBased, StoryboardView {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.reactor = CounterViewReactor()
+    }
+
+    func bind(reactor: CounterViewReactor) {
+        bindAction(reactor)
+        bindState(reactor)
     }
 }
+
+// MARK: -
+// MARK: Bind
+private extension CounterViewController {
+    func bindAction(_ reactor: CounterViewReactor) {
+
+    }
+
+    func bindState(_ reactor: CounterViewReactor) {
+
+    }
+}
+
+// MARK: -
