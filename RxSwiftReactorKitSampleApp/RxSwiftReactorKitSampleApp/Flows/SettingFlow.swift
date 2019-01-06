@@ -21,7 +21,7 @@ final class SettingFlow: Flow {
     }
 
     deinit {
-        print("\(type(of: self)): \(#function)")
+        log.info("\(type(of: self)): \(#function)")
     }
 
     func navigate(to step: Step) -> NextFlowItems {

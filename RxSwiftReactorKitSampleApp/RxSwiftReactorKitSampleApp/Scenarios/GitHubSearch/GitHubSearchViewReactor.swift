@@ -106,7 +106,7 @@ final class GitHubSearchViewReactor: Reactor {
             }
             .do(onError: { error in
                 if case let .some(.httpRequestFailed(response, _)) = error as? RxCocoaURLError, response.statusCode == 403 {
-                    print("⚠️ GitHub API rate limit exceeded. Wait for 60 seconds and try again.")
+                    log.info("⚠️ GitHub API rate limit exceeded. Wait for 60 seconds and try again.")
                 }
             })
             .catchErrorJustReturn(emptyResult)

@@ -16,6 +16,6 @@ class BaseViewController: UIViewController {
     var disposeBag = DisposeBag()
 
     deinit {
-        print("DEINIT: \(self.className)")
+        log.info("DEINIT: \(self.className)")
     }
 }
