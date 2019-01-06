@@ -28,6 +28,7 @@
 		BC1F057221D8CE1B00666A0B /* OnboardingIntroViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC1F057121D8CE1B00666A0B /* OnboardingIntroViewController.storyboard */; };
 		BC1F057421D8CF2600666A0B /* OnboardingIntroViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1F057321D8CF2600666A0B /* OnboardingIntroViewReactor.swift */; };
 		BC1F058021E01C0B00666A0B /* ModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1F057F21E01C0B00666A0B /* ModelType.swift */; };
+		BC1F058521E027C300666A0B /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1F058421E027C300666A0B /* Logger.swift */; };
 		BC6B989721C9498B000FDD98 /* SampleStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6B989621C9498B000FDD98 /* SampleStep.swift */; };
 		BC6B989921C94A18000FDD98 /* AppFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6B989821C94A18000FDD98 /* AppFlow.swift */; };
 		BC6B989C21C95162000FDD98 /* PreferencesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6B989B21C95162000FDD98 /* PreferencesService.swift */; };
@@ -69,6 +70,7 @@
 		BC1F057121D8CE1B00666A0B /* OnboardingIntroViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnboardingIntroViewController.storyboard; sourceTree = "<group>"; };
 		BC1F057321D8CF2600666A0B /* OnboardingIntroViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingIntroViewReactor.swift; sourceTree = "<group>"; };
 		BC1F057F21E01C0B00666A0B /* ModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelType.swift; sourceTree = "<group>"; };
+		BC1F058421E027C300666A0B /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		BC6B989621C9498B000FDD98 /* SampleStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleStep.swift; sourceTree = "<group>"; };
 		BC6B989821C94A18000FDD98 /* AppFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlow.swift; sourceTree = "<group>"; };
 		BC6B989B21C95162000FDD98 /* PreferencesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesService.swift; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 				BC1F057E21E01BF700666A0B /* Models */,
 				BC18741E21B4F81B00AD3A01 /* Networking */,
 				BC18741A21B4F78400AD3A01 /* Scenarios */,
+				BC1F058321E0272E00666A0B /* Logging */,
 				BC18740321B4C3CF00AD3A01 /* AppDelegate.swift */,
 				BC18740A21B4C3CF00AD3A01 /* Assets.xcassets */,
 				BC18740C21B4C3CF00AD3A01 /* LaunchScreen.storyboard */,
@@ -281,6 +284,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		BC1F058321E0272E00666A0B /* Logging */ = {
+			isa = PBXGroup;
+			children = (
+				BC1F058421E027C300666A0B /* Logger.swift */,
+			);
+			path = Logging;
+			sourceTree = "<group>";
+		};
 		BC6B989521C94964000FDD98 /* Flows */ = {
 			isa = PBXGroup;
 			children = (
@@ -400,6 +411,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-RxSwiftReactorKitSampleApp/Pods-RxSwiftReactorKitSampleApp-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
 				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
 				"${BUILT_PRODUCTS_DIR}/FLEX/FLEX.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
@@ -407,7 +419,6 @@
 				"${BUILT_PRODUCTS_DIR}/MoyaSugar/MoyaSugar.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/ReactorKit/ReactorKit.framework",
-				"${BUILT_PRODUCTS_DIR}/Reqres/Reqres.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/Reusable/Reusable.framework",
 				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
@@ -428,6 +439,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FLEX.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
@@ -435,7 +447,6 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MoyaSugar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactorKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reqres.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reusable.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
@@ -520,6 +531,7 @@
 				BC18742F21B50A9600AD3A01 /* SettingViewReactor.swift in Sources */,
 				BC18744421B6056F00AD3A01 /* Localized.swift in Sources */,
 				BC788CB321CFE94C00B9AB63 /* CounterViewController.swift in Sources */,
+				BC1F058521E027C300666A0B /* Logger.swift in Sources */,
 				BC1F058021E01C0B00666A0B /* ModelType.swift in Sources */,
 				BC6B989721C9498B000FDD98 /* SampleStep.swift in Sources */,
 				BC18751921C06B7700AD3A01 /* Networking.swift in Sources */,

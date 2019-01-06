@@ -111,7 +111,10 @@ end
 
 def log_pods
     # https://github.com/AckeeCZ/Reqres
-    pod 'Reqres'
+#    pod 'Reqres'
+
+    # Logging
+    pod 'CocoaLumberjack/Swift'
 end
 
 def firebase_pods
