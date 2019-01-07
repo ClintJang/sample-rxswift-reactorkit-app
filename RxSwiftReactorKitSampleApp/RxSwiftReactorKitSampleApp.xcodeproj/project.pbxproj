@@ -30,6 +30,7 @@
 		BC1F058021E01C0B00666A0B /* ModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1F057F21E01C0B00666A0B /* ModelType.swift */; };
 		BC1F058521E027C300666A0B /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1F058421E027C300666A0B /* Logger.swift */; };
 		BC1F058721E35FB700666A0B /* GitHubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1F058621E35FB700666A0B /* GitHubAPI.swift */; };
+		BC1F058A21E3629100666A0B /* GitHubService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1F058921E3629100666A0B /* GitHubService.swift */; };
 		BC6B989721C9498B000FDD98 /* SampleStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6B989621C9498B000FDD98 /* SampleStep.swift */; };
 		BC6B989921C94A18000FDD98 /* AppFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6B989821C94A18000FDD98 /* AppFlow.swift */; };
 		BC6B989C21C95162000FDD98 /* PreferencesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6B989B21C95162000FDD98 /* PreferencesService.swift */; };
@@ -73,6 +74,7 @@
 		BC1F057F21E01C0B00666A0B /* ModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelType.swift; sourceTree = "<group>"; };
 		BC1F058421E027C300666A0B /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		BC1F058621E35FB700666A0B /* GitHubAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubAPI.swift; sourceTree = "<group>"; };
+		BC1F058921E3629100666A0B /* GitHubService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubService.swift; sourceTree = "<group>"; };
 		BC6B989621C9498B000FDD98 /* SampleStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleStep.swift; sourceTree = "<group>"; };
 		BC6B989821C94A18000FDD98 /* AppFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlow.swift; sourceTree = "<group>"; };
 		BC6B989B21C95162000FDD98 /* PreferencesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesService.swift; sourceTree = "<group>"; };
@@ -213,6 +215,7 @@
 			children = (
 				BC18751821C06B7700AD3A01 /* Networking.swift */,
 				BC1F058621E35FB700666A0B /* GitHubAPI.swift */,
+				BC1F058821E3627B00666A0B /* Services */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -293,6 +296,14 @@
 				BC1F058421E027C300666A0B /* Logger.swift */,
 			);
 			path = Logging;
+			sourceTree = "<group>";
+		};
+		BC1F058821E3627B00666A0B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				BC1F058921E3629100666A0B /* GitHubService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		BC6B989521C94964000FDD98 /* Flows */ = {
@@ -530,6 +541,7 @@
 				BC788CBD21CFEBAD00B9AB63 /* GitHubSearchFlow.swift in Sources */,
 				BC788CBB21CFEB9D00B9AB63 /* CounterFlow.swift in Sources */,
 				BC18745521B67CAE00AD3A01 /* GitHubSearchViewController.swift in Sources */,
+				BC1F058A21E3629100666A0B /* GitHubService.swift in Sources */,
 				BC6B989C21C95162000FDD98 /* PreferencesService.swift in Sources */,
 				BC18742F21B50A9600AD3A01 /* SettingViewReactor.swift in Sources */,
 				BC18744421B6056F00AD3A01 /* Localized.swift in Sources */,

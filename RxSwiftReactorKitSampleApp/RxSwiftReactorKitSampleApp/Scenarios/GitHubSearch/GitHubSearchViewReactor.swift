@@ -33,6 +33,7 @@ final class GitHubSearchViewReactor: Reactor {
     func mutate(action: Action) -> Observable<Mutation> {
         switch action {
         case let .updateQuery(query):
+
             return Observable.concat([
                 // 1) set current state's query (.setQuery)
                 Observable.just(Mutation.setQuery(query)),

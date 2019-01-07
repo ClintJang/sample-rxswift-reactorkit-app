@@ -14,6 +14,12 @@ class SettingViewController: BaseViewController, StoryboardView, StoryboardBased
     override func viewDidLoad() {
         super.viewDidLoad()
         reactor = SettingViewReactor()
+
+        // GitHubService Test
+        let gitHubService = GitHubService()
+        let test = gitHubService.search(query: "test", page: "1").asObservable()
+        test.debug().subscribe().disposed(by: self.disposeBag)
+
     }
 
     func bind(reactor: SettingViewReactor) {
