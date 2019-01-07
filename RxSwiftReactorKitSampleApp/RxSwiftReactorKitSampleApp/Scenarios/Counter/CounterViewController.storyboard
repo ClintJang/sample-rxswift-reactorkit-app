@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="G4K-ov-g9n">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="i7W-1h-3oT">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -11,19 +11,60 @@
     </dependencies>
     <scenes>
         <!--Counter View Controller-->
-        <scene sceneID="daS-Gk-OsU">
+        <scene sceneID="IEJ-Oj-Yrb">
             <objects>
-                <viewController id="G4K-ov-g9n" customClass="CounterViewController" customModule="RxSwiftReactorKitSampleApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="o6g-uv-O8g">
+                <viewController id="i7W-1h-3oT" customClass="CounterViewController" customModule="Counter" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zpJ-u9-D5y"/>
+                        <viewControllerLayoutGuide type="bottom" id="00E-j1-bo5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ff4-N6-cz4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="2wb-gg-bSJ"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YO8-ny-0wJ">
+                                <rect key="frame" x="179" y="318" width="17" height="31"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dbr-Fm-y62">
+                                <rect key="frame" x="30" y="311.5" width="30" height="44"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <state key="normal" title="-"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NrL-Tb-6mC">
+                                <rect key="frame" x="315" y="311.5" width="30" height="44"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <state key="normal" title="+"/>
+                            </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="GbC-xE-iic">
+                                <rect key="frame" x="177.5" y="399" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="GbC-xE-iic" firstAttribute="top" secondItem="YO8-ny-0wJ" secondAttribute="bottom" constant="50" id="Mnd-iP-tHh"/>
+                            <constraint firstItem="YO8-ny-0wJ" firstAttribute="centerY" secondItem="Ff4-N6-cz4" secondAttribute="centerY" id="SJQ-rf-6iA"/>
+                            <constraint firstAttribute="trailing" secondItem="NrL-Tb-6mC" secondAttribute="trailing" constant="30" id="UWq-nl-cbz"/>
+                            <constraint firstItem="GbC-xE-iic" firstAttribute="centerX" secondItem="Ff4-N6-cz4" secondAttribute="centerX" id="YBL-eW-f7l"/>
+                            <constraint firstItem="YO8-ny-0wJ" firstAttribute="centerX" secondItem="Ff4-N6-cz4" secondAttribute="centerX" id="f2o-m1-DC1"/>
+                            <constraint firstItem="dbr-Fm-y62" firstAttribute="leading" secondItem="Ff4-N6-cz4" secondAttribute="leading" constant="30" id="kPs-75-Ybw"/>
+                            <constraint firstItem="NrL-Tb-6mC" firstAttribute="centerY" secondItem="Ff4-N6-cz4" secondAttribute="centerY" id="nDw-Pa-9hg"/>
+                            <constraint firstItem="dbr-Fm-y62" firstAttribute="centerY" secondItem="Ff4-N6-cz4" secondAttribute="centerY" id="xPG-SQ-6i2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1ku-tl-iaS"/>
                     </view>
+                    <connections>
+                        <outlet property="activityIndicatorView" destination="GbC-xE-iic" id="9Ni-fG-rJy"/>
+                        <outlet property="decreaseButton" destination="dbr-Fm-y62" id="mSr-bD-t17"/>
+                        <outlet property="increaseButton" destination="NrL-Tb-6mC" id="2LI-ut-gwt"/>
+                        <outlet property="valueLabel" destination="YO8-ny-0wJ" id="vDC-qm-hCF"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="NXH-1N-aWu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6gd-f4-c7F" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-55" y="89"/>
+            <point key="canvasLocation" x="-58" y="36"/>
         </scene>
     </scenes>
 </document>
