@@ -33,13 +33,21 @@ class GitHubSearchViewController: BaseViewController, StoryboardView, Storyboard
 
         bindAction(reactor)
         bindState(reactor)
+        bindView(reactor)
 
+    }
+}
+
+// MARK: -
+// MARK: Bind
+private extension GitHubSearchViewController {
+    func bindView(_ reactor: GitHubSearchViewReactor) {
         tableView.rx.itemSelected
             .subscribe(onNext: { [weak self, weak reactor] indexPath in
-                guard let self = self else { return }
+                guard let self = self, let strongReactor = reactor else { return }
                 self.view.endEditing(true)
                 self.tableView.deselectRow(at: indexPath, animated: false)
-                guard let repo = reactor?.currentState.repos[indexPath.row] else { return }
+                let repo = strongReactor.currentState.repos[indexPath.row]
                 guard let url = URL(string: "https://github.com/\(repo)") else { return }
                 let viewController = SFSafariViewController(url: url)
                 self.searchController.present(viewController, animated: true, completion: nil)
@@ -55,11 +63,7 @@ class GitHubSearchViewController: BaseViewController, StoryboardView, Storyboard
             })
             .disposed(by: disposeBag)
     }
-}
 
-// MARK: -
-// MARK: Bind
-private extension GitHubSearchViewController {
     func bindAction(_ reactor: GitHubSearchViewReactor) {
         searchController.searchBar.rx.text
             .throttle(0.3, scheduler: MainScheduler.instance)

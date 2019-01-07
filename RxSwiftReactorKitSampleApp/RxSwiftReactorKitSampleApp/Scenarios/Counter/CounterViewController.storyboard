@@ -41,16 +41,32 @@
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="GbC-xE-iic">
                                 <rect key="frame" x="177.5" y="399" width="20" height="20"/>
                             </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="https://github.com/ReactorKit/ReactorKit/blob/master/Examples/Counter/README.md" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8It-5m-r9R">
+                                <rect key="frame" x="20" y="613.5" width="335" height="33.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2O2-bN-BBP">
+                                <rect key="frame" x="20" y="613.5" width="335" height="33.5"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="2O2-bN-BBP" firstAttribute="leading" secondItem="1ku-tl-iaS" secondAttribute="leading" constant="20" id="7Zf-qr-Orz"/>
+                            <constraint firstItem="1ku-tl-iaS" firstAttribute="trailing" secondItem="2O2-bN-BBP" secondAttribute="trailing" constant="20" id="Bkj-6W-r2u"/>
+                            <constraint firstItem="2O2-bN-BBP" firstAttribute="height" secondItem="8It-5m-r9R" secondAttribute="height" id="DUL-Fu-D3S"/>
                             <constraint firstItem="GbC-xE-iic" firstAttribute="top" secondItem="YO8-ny-0wJ" secondAttribute="bottom" constant="50" id="Mnd-iP-tHh"/>
                             <constraint firstItem="YO8-ny-0wJ" firstAttribute="centerY" secondItem="Ff4-N6-cz4" secondAttribute="centerY" id="SJQ-rf-6iA"/>
                             <constraint firstAttribute="trailing" secondItem="NrL-Tb-6mC" secondAttribute="trailing" constant="30" id="UWq-nl-cbz"/>
+                            <constraint firstItem="00E-j1-bo5" firstAttribute="top" secondItem="8It-5m-r9R" secondAttribute="bottom" constant="20" id="XE2-zs-E74"/>
                             <constraint firstItem="GbC-xE-iic" firstAttribute="centerX" secondItem="Ff4-N6-cz4" secondAttribute="centerX" id="YBL-eW-f7l"/>
+                            <constraint firstItem="8It-5m-r9R" firstAttribute="leading" secondItem="1ku-tl-iaS" secondAttribute="leading" constant="20" id="ejc-sA-QAl"/>
                             <constraint firstItem="YO8-ny-0wJ" firstAttribute="centerX" secondItem="Ff4-N6-cz4" secondAttribute="centerX" id="f2o-m1-DC1"/>
+                            <constraint firstItem="1ku-tl-iaS" firstAttribute="trailing" secondItem="8It-5m-r9R" secondAttribute="trailing" constant="20" id="iYr-qZ-TE8"/>
                             <constraint firstItem="dbr-Fm-y62" firstAttribute="leading" secondItem="Ff4-N6-cz4" secondAttribute="leading" constant="30" id="kPs-75-Ybw"/>
                             <constraint firstItem="NrL-Tb-6mC" firstAttribute="centerY" secondItem="Ff4-N6-cz4" secondAttribute="centerY" id="nDw-Pa-9hg"/>
+                            <constraint firstItem="00E-j1-bo5" firstAttribute="top" secondItem="2O2-bN-BBP" secondAttribute="bottom" constant="20" id="rf3-7R-KKM"/>
                             <constraint firstItem="dbr-Fm-y62" firstAttribute="centerY" secondItem="Ff4-N6-cz4" secondAttribute="centerY" id="xPG-SQ-6i2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1ku-tl-iaS"/>
@@ -59,6 +75,7 @@
                         <outlet property="activityIndicatorView" destination="GbC-xE-iic" id="9Ni-fG-rJy"/>
                         <outlet property="decreaseButton" destination="dbr-Fm-y62" id="mSr-bD-t17"/>
                         <outlet property="increaseButton" destination="NrL-Tb-6mC" id="2LI-ut-gwt"/>
+                        <outlet property="linkButton" destination="2O2-bN-BBP" id="pEA-Dr-3Yr"/>
                         <outlet property="valueLabel" destination="YO8-ny-0wJ" id="vDC-qm-hCF"/>
                     </connections>
                 </viewController>
