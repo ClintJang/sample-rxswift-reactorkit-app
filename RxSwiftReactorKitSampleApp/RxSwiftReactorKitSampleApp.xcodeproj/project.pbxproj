@@ -29,6 +29,7 @@
 		BC1F057421D8CF2600666A0B /* OnboardingIntroViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1F057321D8CF2600666A0B /* OnboardingIntroViewReactor.swift */; };
 		BC1F058021E01C0B00666A0B /* ModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1F057F21E01C0B00666A0B /* ModelType.swift */; };
 		BC1F058521E027C300666A0B /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1F058421E027C300666A0B /* Logger.swift */; };
+		BC1F058721E35FB700666A0B /* GitHubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1F058621E35FB700666A0B /* GitHubAPI.swift */; };
 		BC6B989721C9498B000FDD98 /* SampleStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6B989621C9498B000FDD98 /* SampleStep.swift */; };
 		BC6B989921C94A18000FDD98 /* AppFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6B989821C94A18000FDD98 /* AppFlow.swift */; };
 		BC6B989C21C95162000FDD98 /* PreferencesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6B989B21C95162000FDD98 /* PreferencesService.swift */; };
@@ -71,6 +72,7 @@
 		BC1F057321D8CF2600666A0B /* OnboardingIntroViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingIntroViewReactor.swift; sourceTree = "<group>"; };
 		BC1F057F21E01C0B00666A0B /* ModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelType.swift; sourceTree = "<group>"; };
 		BC1F058421E027C300666A0B /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		BC1F058621E35FB700666A0B /* GitHubAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubAPI.swift; sourceTree = "<group>"; };
 		BC6B989621C9498B000FDD98 /* SampleStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleStep.swift; sourceTree = "<group>"; };
 		BC6B989821C94A18000FDD98 /* AppFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlow.swift; sourceTree = "<group>"; };
 		BC6B989B21C95162000FDD98 /* PreferencesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesService.swift; sourceTree = "<group>"; };
@@ -210,6 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				BC18751821C06B7700AD3A01 /* Networking.swift */,
+				BC1F058621E35FB700666A0B /* GitHubAPI.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -541,6 +544,7 @@
 				BC18744E21B64A1300AD3A01 /* BaseViewController.swift in Sources */,
 				BC1F056D21D8CD1F00666A0B /* OnboardingFlow.swift in Sources */,
 				BC788CB021CFE43B00B9AB63 /* DashboardFlow.swift in Sources */,
+				BC1F058721E35FB700666A0B /* GitHubAPI.swift in Sources */,
 				BC18740421B4C3CF00AD3A01 /* AppDelegate.swift in Sources */,
 				BC18745721B67CE100AD3A01 /* GitHubSearchViewReactor.swift in Sources */,
 				BC788CBF21CFEBB900B9AB63 /* SettingFlow.swift in Sources */,
