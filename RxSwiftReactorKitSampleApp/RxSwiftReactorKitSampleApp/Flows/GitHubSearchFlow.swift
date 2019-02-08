@@ -24,25 +24,24 @@ final class GitHubSearchFlow: Flow {
         log.info("\(type(of: self)): \(#function)")
     }
 
-    func navigate(to step: Step) -> NextFlowItems {
+    func navigate(to step: Step) -> FlowContributors {
 
-        guard let step = step as? SampleStep else { return NextFlowItems.none }
+        guard let step = step as? SampleStep else { return FlowContributors.none }
 
         switch step {
 
-        case .gitHubSearch:
+        case .gitHubSearchIsRequired:
             return navigateToGitHubSearchScreen()
         default:
-            return NextFlowItems.none
+            return FlowContributors.none
         }
     }
 
-    private func navigateToGitHubSearchScreen() -> NextFlowItems {
+    private func navigateToGitHubSearchScreen() -> FlowContributors {
         let viewController = GitHubSearchViewController.instantiate()
         viewController.title = "GitHubSearch"
 
         self.rootViewController.pushViewController(viewController, animated: true)
-        return .one(flowItem: NextFlowItem(nextPresentable: viewController,
-                                           nextStepper: OneStepper(withSingleStep: SampleStep.gitHubSearch)))
+        return .one(flowContributor: .contribute(withNextPresentable: viewController, withNextStepper: OneStepper(withSingleStep: SampleStep.gitHubSearchIsRequired)))
     }
 }

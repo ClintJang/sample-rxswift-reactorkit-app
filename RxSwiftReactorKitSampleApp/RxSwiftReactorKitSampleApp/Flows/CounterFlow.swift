@@ -24,25 +24,24 @@ final class CounterFlow: Flow {
         log.info("\(type(of: self)): \(#function)")
     }
 
-    func navigate(to step: Step) -> NextFlowItems {
+    func navigate(to step: Step) -> FlowContributors {
 
-        guard let step = step as? SampleStep else { return NextFlowItems.none }
+        guard let step = step as? SampleStep else { return FlowContributors.none }
 
         switch step {
 
-        case .counter:
+        case .counterIsRequired:
             return navigateToCounterScreen()
         default:
-            return NextFlowItems.none
+            return FlowContributors.none
         }
     }
 
-    private func navigateToCounterScreen() -> NextFlowItems {
+    private func navigateToCounterScreen() -> FlowContributors {
         let viewController = CounterViewController.instantiate()
         viewController.title = "Counter"
 
         self.rootViewController.pushViewController(viewController, animated: true)
-        return .one(flowItem: NextFlowItem(nextPresentable: viewController,
-                                           nextStepper: OneStepper(withSingleStep: SampleStep.counter)))
+        return .one(flowContributor: .contribute(withNextPresentable: viewController, withNextStepper: OneStepper(withSingleStep: SampleStep.counterIsRequired)))
     }
 }

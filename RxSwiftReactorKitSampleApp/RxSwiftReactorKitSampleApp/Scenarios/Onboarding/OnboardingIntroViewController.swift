@@ -10,6 +10,7 @@ import UIKit
 import Reusable
 
 final class OnboardingIntroViewController: BaseViewController, StoryboardView, StoryboardBased, Stepper {
+    let steps = PublishRelay<Step>()
 
     @IBOutlet weak var completeButton: UIButton!
 
@@ -38,7 +39,7 @@ private extension OnboardingIntroViewController {
     func bindState(_ reactor: OnboardingIntroViewReactor) {
         reactor.state
             .map { $0.step }
-            .bind(to: self.step)
+            .bind(to: self.steps)
             .disposed(by: disposeBag)
     }
 }

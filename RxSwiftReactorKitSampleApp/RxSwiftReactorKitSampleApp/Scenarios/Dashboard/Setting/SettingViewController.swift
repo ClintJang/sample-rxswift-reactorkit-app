@@ -33,8 +33,8 @@ class SettingViewController: BaseViewController, StoryboardView, StoryboardBased
 // MARK: Bind
 private extension SettingViewController {
     func bindView(_ reactor: SettingViewReactor) {}
-
     func bindAction(_ reactor: SettingViewReactor) {}
-
     func bindState(_ reactor: SettingViewReactor) {}
 }
+
+// MARK: -

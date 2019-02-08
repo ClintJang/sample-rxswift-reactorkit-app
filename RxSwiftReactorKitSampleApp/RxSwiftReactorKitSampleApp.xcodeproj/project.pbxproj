@@ -189,9 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				BC1F056E21D8CDCC00666A0B /* Onboarding */,
-				BC788CB121CFE72300B9AB63 /* Counter */,
-				BC18745121B67C3100AD3A01 /* GitHubSearch */,
-				BC18742921B50A5500AD3A01 /* Setting */,
+				BCF81FBE220D9CBE009C82AB /* Dashboard */,
 			);
 			path = Scenarios;
 			sourceTree = "<group>";
@@ -336,6 +334,16 @@
 				BC788CB421CFE96D00B9AB63 /* CounterViewReactor.swift */,
 			);
 			path = Counter;
+			sourceTree = "<group>";
+		};
+		BCF81FBE220D9CBE009C82AB /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				BC788CB121CFE72300B9AB63 /* Counter */,
+				BC18745121B67C3100AD3A01 /* GitHubSearch */,
+				BC18742921B50A5500AD3A01 /* Setting */,
+			);
+			path = Dashboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

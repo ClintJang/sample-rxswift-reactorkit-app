@@ -7,18 +7,18 @@
 //
 
 enum SampleStep: Step {
-    case onboarding
+    case onboardingIsRequired
     case onboardingIsComplete
 
-    case intro
+    case introIsRequired
     case introIsComplete
 
-    case dashboard
+    case dashboardIsRequired
 
-    case counter
+    case counterIsRequired
 
-    case gitHubSearch
+    case gitHubSearchIsRequired
 
-    case setting
+    case settingIsRequired
 
 }

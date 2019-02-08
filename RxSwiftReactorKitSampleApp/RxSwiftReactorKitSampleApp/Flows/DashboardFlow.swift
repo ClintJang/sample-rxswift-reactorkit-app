@@ -24,18 +24,18 @@ final class DashboardFlow: Flow {
         log.info("\(type(of: self)): \(#function)")
     }
 
-    func navigate(to step: Step) -> NextFlowItems {
-        guard let step = step as? SampleStep else { return NextFlowItems.none }
+    func navigate(to step: Step) -> FlowContributors {
+        guard let step = step as? SampleStep else { return FlowContributors.none }
 
         switch step {
-        case .dashboard:
+        case .dashboardIsRequired:
             return navigateToDashboard()
         default:
             return .none
         }
     }
 
-    private func navigateToDashboard() -> NextFlowItems {
+    private func navigateToDashboard() -> FlowContributors {
         let counterFlow = CounterFlow(withServices: self.services)
         let githubSearchFlow = GitHubSearchFlow(withServices: self.services)
         let settingFlow = SettingFlow(withServices: self.services)
@@ -55,11 +55,11 @@ final class DashboardFlow: Flow {
             self.rootViewController.setViewControllers([root1, root2, root3], animated: false)
         }
 
-        return .multiple(flowItems: [NextFlowItem(nextPresentable: counterFlow,
-                                                  nextStepper: OneStepper(withSingleStep: SampleStep.counter)),
-                                     NextFlowItem(nextPresentable: githubSearchFlow,
-                                                  nextStepper: OneStepper(withSingleStep: SampleStep.gitHubSearch)),
-                                     NextFlowItem(nextPresentable: settingFlow,
-                                                  nextStepper: OneStepper(withSingleStep: SampleStep.setting))])
+        return .multiple(flowContributors: [.contribute(withNextPresentable: counterFlow,
+                                                        withNextStepper: OneStepper(withSingleStep: SampleStep.counterIsRequired)),
+                                            .contribute(withNextPresentable: githubSearchFlow,
+                                                        withNextStepper: OneStepper(withSingleStep: SampleStep.gitHubSearchIsRequired)),
+                                            .contribute(withNextPresentable: settingFlow,
+                                                        withNextStepper: OneStepper(withSingleStep: SampleStep.settingIsRequired))])
         }
 }

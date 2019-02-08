@@ -29,25 +29,25 @@ final class OnboardingFlow: Flow {
         log.info("\(type(of: self)): \(#function)")
     }
 
-    func navigate(to step: Step) -> NextFlowItems {
+    func navigate(to step: Step) -> FlowContributors {
         guard let step = step as? SampleStep else { return .none }
 
         switch step {
-        case .intro:
+        case .introIsRequired:
             return navigationToOnboardingIntroScreen()
         case .introIsComplete:
-            return .end(withStepForParentFlow: SampleStep.onboardingIsComplete)
+            return .end(forwardToParentFlowWithStep: SampleStep.onboardingIsComplete)
         default:
             return .none
         }
     }
 
-    private func navigationToOnboardingIntroScreen() -> NextFlowItems {
+    private func navigationToOnboardingIntroScreen() -> FlowContributors {
         let onboardingIntroViewController = OnboardingIntroViewController.instantiate()
+
         onboardingIntroViewController.title = "앱 소개"
         self.rootViewController.pushViewController(onboardingIntroViewController, animated: false)
-
-        return .one(flowItem: NextFlowItem(nextPresentable: onboardingIntroViewController,
-                                           nextStepper: onboardingIntroViewController))
+        return .one(flowContributor: .contribute(withNextPresentable: onboardingIntroViewController,
+                                                 withNextStepper: onboardingIntroViewController))
     }
 }

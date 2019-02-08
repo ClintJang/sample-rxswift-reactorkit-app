@@ -90,3 +90,5 @@ private extension GitHubSearchViewController {
             .disposed(by: disposeBag)
     }
 }
+
+// MARK: -

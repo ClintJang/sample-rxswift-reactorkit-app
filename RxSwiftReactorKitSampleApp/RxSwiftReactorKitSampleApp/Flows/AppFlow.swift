@@ -26,20 +26,20 @@ final class AppFlow: Flow {
         log.info("\(type(of: self)): \(#function)")
     }
 
-    func navigate(to step: Step) -> NextFlowItems {
-        guard let step = step as? SampleStep else { return NextFlowItems.none }
+    func navigate(to step: Step) -> FlowContributors {
+        guard let step = step as? SampleStep else { return FlowContributors.none }
 
         switch step {
-        case .onboarding:
+        case .onboardingIsRequired:
             return navigationToOnboardingScreen()
-        case .onboardingIsComplete, .dashboard:
+        case .onboardingIsComplete, .dashboardIsRequired:
             return navigationToDashboardScreen()
         default:
-            return NextFlowItems.none
+            return FlowContributors.none
         }
     }
 
-    private func navigationToOnboardingScreen() -> NextFlowItems {
+    private func navigationToOnboardingScreen() -> FlowContributors {
 
         if let rootViewController = self.rootWindow.rootViewController {
             rootViewController.dismiss(animated: false)
@@ -50,28 +50,45 @@ final class AppFlow: Flow {
             self.rootWindow.rootViewController = root
         }
 
-        return .one(flowItem: NextFlowItem(nextPresentable: onboardingFlow,
-                                           nextStepper: OneStepper(withSingleStep: SampleStep.intro)))
+        return .one(flowContributor: .contribute(withNextPresentable: onboardingFlow, withNextStepper: OneStepper(withSingleStep: SampleStep.introIsRequired)))
     }
 
-    private func navigationToDashboardScreen() -> NextFlowItems {
+    private func navigationToDashboardScreen() -> FlowContributors {
         let dashboardFlow = DashboardFlow(withServices: self.services)
 
         Flows.whenReady(flow1: dashboardFlow) { [unowned self] (root) in
             self.rootWindow.rootViewController = root
         }
 
-        return .one(flowItem: NextFlowItem(nextPresentable: dashboardFlow,
-                                           nextStepper: OneStepper(withSingleStep: SampleStep.dashboard)))
+        return .one(flowContributor: .contribute(withNextPresentable: dashboardFlow,
+                                                 withNextStepper: OneStepper(withSingleStep: SampleStep.dashboardIsRequired)))
     }
 }
 
 class AppStepper: Stepper {
+
+    let steps = PublishRelay<Step>()
+    private let appServices: AppServices
+    private let disposeBag = DisposeBag()
+
     init(withServices services: AppServices) {
-        if services.preferencesService.isOnboarded() {
-            self.step.accept(SampleStep.dashboard)
-        } else {
-            self.step.accept(SampleStep.onboarding)
-        }
+        self.appServices = services
+    }
+
+    var initialStep: Step {
+//        return SampleStep.dashboardIsRequired
+        return SampleStep.onboardingIsRequired
+    }
+
+    /// callback used to emit steps once the FlowCoordinator is ready to listen to them to contribute to the Flow
+    func readyToEmitSteps() {
+        self.appServices
+            .preferencesService.rx
+            .isOnboarded
+            .debug()
+            .map { $0 ? SampleStep.onboardingIsComplete : SampleStep.onboardingIsRequired }
+            .debug()
+            .bind(to: self.steps)
+            .disposed(by: self.disposeBag)
     }
 }

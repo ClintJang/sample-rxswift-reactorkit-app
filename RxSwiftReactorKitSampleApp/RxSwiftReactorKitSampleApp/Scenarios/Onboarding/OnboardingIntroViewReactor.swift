@@ -20,7 +20,7 @@ final class OnboardingIntroViewReactor: Reactor, HasPreferencesService {
     }
 
     struct State {
-        var step: Step = SampleStep.intro
+        var step: Step = SampleStep.introIsRequired
     }
 
     let initialState = State()
@@ -28,7 +28,7 @@ final class OnboardingIntroViewReactor: Reactor, HasPreferencesService {
     func mutate(action: OnboardingIntroViewReactor.Action) -> Observable<OnboardingIntroViewReactor.Mutation> {
         switch action {
         case .introIsComplete:
-            preferencesService.setOnboarding()
+            preferencesService.setOnboarded()
             return Observable.just(Mutation.moveDashboard)
         }
     }
